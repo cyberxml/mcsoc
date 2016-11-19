@@ -1,14 +1,14 @@
 import unittest
 import vagrant
 
-v=vagrant.Vagrant()
+v=vagrant.Vagrant("../vagrant/routers")
 
-rtrs = ['rtr-ext', 'rtr-dmz', 'rtr-int', 'rtr-dev']
+rtrs = ['rtr_ext', 'rtr_dmz', 'rtr_int', 'rtr_ent', 'rtr_dev']
 p = 0
 f = 0
 for r in rtrs:
 	try:
-		status=v.status(r)
+		status=v.status(r)[0]
 		if (status.state == 'running'):
 			print '\t'.join(["[PASS]",r,status.state])
 			p=p+1
