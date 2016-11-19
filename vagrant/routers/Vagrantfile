@@ -1,0 +1,16 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+Vagrant.configure("2") do |config|
+  config.vm.box = "cyberxml/pfsense-ce-232-64"
+  config.vm.define "rtr_ext" do |rtr_ext|
+    rtr_ext.vm.box = "cyberxml/pfsense-ce-232-64"
+    rtr_ext.ssh.shell = 'sh'
+    rtr_ext.ssh.username = 'vagrant'
+    rtr_ext.ssh.password = 'vagrant'
+    rtr_ext.vm.network "private_network", ip: "10.10.1.1", virtualbox__intnet: true
+    rtr_ext.vm.network "private_network", ip: "10.10.2.1", virtualbox__intnet: true
+    rtr_ext.vm.network "forwarded_port", guest: 443, host: 55433
+    rtr_ext.vm.synced_folder ".", "/vagrant", disabled: true
+  end
+end

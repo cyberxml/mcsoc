@@ -1,0 +1,905 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:java="http://www.yworks.com/xml/yfiles-common/1.0/java" xmlns:sys="http://www.yworks.com/xml/yfiles-common/markup/primitives/2.0" xmlns:x="http://www.yworks.com/xml/yfiles-common/markup/2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:y="http://www.yworks.com/xml/graphml" xmlns:yed="http://www.yworks.com/xml/yed/3" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://www.yworks.com/xml/schema/graphml/1.1/ygraphml.xsd">
+  <!--Created by yEd 3.16.2.1-->
+  <key attr.name="Description" attr.type="string" for="graph" id="d0"/>
+  <key for="port" id="d1" yfiles.type="portgraphics"/>
+  <key for="port" id="d2" yfiles.type="portgeometry"/>
+  <key for="port" id="d3" yfiles.type="portuserdata"/>
+  <key attr.name="url" attr.type="string" for="node" id="d4"/>
+  <key attr.name="description" attr.type="string" for="node" id="d5"/>
+  <key for="node" id="d6" yfiles.type="nodegraphics"/>
+  <key for="graphml" id="d7" yfiles.type="resources"/>
+  <key attr.name="url" attr.type="string" for="edge" id="d8"/>
+  <key attr.name="description" attr.type="string" for="edge" id="d9"/>
+  <key for="edge" id="d10" yfiles.type="edgegraphics"/>
+  <graph edgedefault="directed" id="G">
+    <data key="d0"><![CDATA[DMZ]]></data>
+    <node id="n0">
+      <data key="d6">
+        <y:SVGNode>
+          <y:Geometry height="130.83100509643555" width="180.5" x="169.07851943969712" y="-502.8003379821777"/>
+          <y:Fill color="#CCCCFF" transparent="false"/>
+          <y:BorderStyle color="#000000" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" hasText="false" height="4.0" horizontalTextPosition="center" iconTextGap="4" modelName="sandwich" modelPosition="s" textColor="#000000" verticalTextPosition="bottom" visible="true" width="4.0" x="88.25" y="134.83100509643555"/>
+          <y:SVGNodeProperties usingVisualBounds="true"/>
+          <y:SVGModel svgBoundsPolicy="0">
+            <y:SVGContent refid="1"/>
+          </y:SVGModel>
+        </y:SVGNode>
+      </data>
+    </node>
+    <node id="n1" yfiles.foldertype="group">
+      <data key="d4"/>
+      <data key="d5"/>
+      <data key="d6">
+        <y:ProxyAutoBoundsNode>
+          <y:Realizers active="0">
+            <y:GroupNode>
+              <y:Geometry height="109.69689216613767" width="179.79999999999995" x="169.42851943969714" y="-342.05108127593996"/>
+              <y:Fill color="#F5F5F5" transparent="false"/>
+              <y:BorderStyle color="#000000" type="dashed" width="1.0"/>
+              <y:NodeLabel alignment="right" autoSizePolicy="node_width" backgroundColor="#EBEBEB" borderDistance="0.0" fontFamily="Dialog" fontSize="15" fontStyle="plain" hasLineColor="false" height="21.4609375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="179.79999999999995" x="0.0" y="0.0">Router-External</y:NodeLabel>
+              <y:Shape type="roundrectangle"/>
+              <y:State closed="false" closedHeight="50.0" closedWidth="50.0" innerGraphDisplayEnabled="false"/>
+              <y:Insets bottom="15" bottomF="15.0" left="15" leftF="15.0" right="15" rightF="15.0" top="15" topF="15.0"/>
+              <y:BorderInsets bottom="0" bottomF="0.0" left="0" leftF="0.0" right="0" rightF="0.0" top="0" topF="0.0"/>
+            </y:GroupNode>
+            <y:GroupNode>
+              <y:Geometry height="50.0" width="50.0" x="0.0" y="60.0"/>
+              <y:Fill color="#F5F5F5" transparent="false"/>
+              <y:BorderStyle color="#000000" type="dashed" width="1.0"/>
+              <y:NodeLabel alignment="right" autoSizePolicy="node_width" backgroundColor="#EBEBEB" borderDistance="0.0" fontFamily="Dialog" fontSize="15" fontStyle="plain" hasLineColor="false" height="21.4609375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="65.201171875" x="-7.6005859375" y="0.0">Folder 1</y:NodeLabel>
+              <y:Shape type="roundrectangle"/>
+              <y:State closed="true" closedHeight="50.0" closedWidth="50.0" innerGraphDisplayEnabled="false"/>
+              <y:Insets bottom="5" bottomF="5.0" left="5" leftF="5.0" right="5" rightF="5.0" top="5" topF="5.0"/>
+              <y:BorderInsets bottom="0" bottomF="0.0" left="0" leftF="0.0" right="0" rightF="0.0" top="0" topF="0.0"/>
+            </y:GroupNode>
+          </y:Realizers>
+        </y:ProxyAutoBoundsNode>
+      </data>
+      <graph edgedefault="directed" id="n1:">
+        <node id="n1::n0">
+          <data key="d5"/>
+          <data key="d6">
+            <y:GenericNode configuration="BevelNode2">
+              <y:Geometry height="58.23595466613767" width="149.79999999999995" x="184.42851943969714" y="-305.59014377593996"/>
+              <y:Fill color="#00CCFF" transparent="false"/>
+              <y:BorderStyle hasColor="false" type="line" width="1.0"/>
+              <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" hasText="false" height="4.0" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="4.0" x="72.89999999999998" y="27.117977333068836">
+                <y:LabelModel>
+                  <y:SmartNodeLabelModel distance="4.0"/>
+                </y:LabelModel>
+                <y:ModelParameter>
+                  <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+                </y:ModelParameter>
+              </y:NodeLabel>
+            </y:GenericNode>
+          </data>
+        </node>
+        <node id="n1::n1">
+          <data key="d6">
+            <y:SVGNode>
+              <y:Geometry height="31.250017166137695" width="46.25" x="196.45533981323234" y="-292.0971750259399"/>
+              <y:Fill color="#CCCCFF" transparent="false"/>
+              <y:BorderStyle color="#000000" type="line" width="1.0"/>
+              <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" hasText="false" height="4.0" horizontalTextPosition="center" iconTextGap="4" modelName="sandwich" modelPosition="s" textColor="#000000" verticalTextPosition="bottom" visible="true" width="4.0" x="21.125" y="35.250017166137695"/>
+              <y:SVGNodeProperties usingVisualBounds="true"/>
+              <y:SVGModel svgBoundsPolicy="0">
+                <y:SVGContent refid="2"/>
+              </y:SVGModel>
+            </y:SVGNode>
+          </data>
+        </node>
+        <node id="n1::n2">
+          <data key="d6">
+            <y:SVGNode>
+              <y:Geometry height="31.250017166137695" width="46.25" x="272.70533981323234" y="-292.0971750259399"/>
+              <y:Fill color="#CCCCFF" transparent="false"/>
+              <y:BorderStyle color="#000000" type="line" width="1.0"/>
+              <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" hasText="false" height="4.0" horizontalTextPosition="center" iconTextGap="4" modelName="sandwich" modelPosition="s" textColor="#000000" verticalTextPosition="bottom" visible="true" width="4.0" x="21.125" y="35.250017166137695"/>
+              <y:SVGNodeProperties usingVisualBounds="true"/>
+              <y:SVGModel svgBoundsPolicy="0">
+                <y:SVGContent refid="2"/>
+              </y:SVGModel>
+            </y:SVGNode>
+          </data>
+        </node>
+      </graph>
+    </node>
+    <node id="n2" yfiles.foldertype="group">
+      <data key="d4"/>
+      <data key="d5"/>
+      <data key="d6">
+        <y:ProxyAutoBoundsNode>
+          <y:Realizers active="0">
+            <y:GroupNode>
+              <y:Geometry height="109.69689216613767" width="179.79999999999995" x="169.42851943969714" y="-21.236537551879792"/>
+              <y:Fill color="#F5F5F5" transparent="false"/>
+              <y:BorderStyle color="#000000" type="dashed" width="1.0"/>
+              <y:NodeLabel alignment="right" autoSizePolicy="node_width" backgroundColor="#EBEBEB" borderDistance="0.0" fontFamily="Dialog" fontSize="15" fontStyle="plain" hasLineColor="false" height="21.4609375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="179.79999999999995" x="0.0" y="0.0">Router-DMZ</y:NodeLabel>
+              <y:Shape type="roundrectangle"/>
+              <y:State closed="false" closedHeight="50.0" closedWidth="50.0" innerGraphDisplayEnabled="false"/>
+              <y:Insets bottom="15" bottomF="15.0" left="15" leftF="15.0" right="15" rightF="15.0" top="15" topF="15.0"/>
+              <y:BorderInsets bottom="0" bottomF="0.0" left="0" leftF="0.0" right="0" rightF="0.0" top="0" topF="0.0"/>
+            </y:GroupNode>
+            <y:GroupNode>
+              <y:Geometry height="50.0" width="50.0" x="0.0" y="60.0"/>
+              <y:Fill color="#F5F5F5" transparent="false"/>
+              <y:BorderStyle color="#000000" type="dashed" width="1.0"/>
+              <y:NodeLabel alignment="right" autoSizePolicy="node_width" backgroundColor="#EBEBEB" borderDistance="0.0" fontFamily="Dialog" fontSize="15" fontStyle="plain" hasLineColor="false" height="21.4609375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="65.201171875" x="-7.6005859375" y="0.0">Folder 1</y:NodeLabel>
+              <y:Shape type="roundrectangle"/>
+              <y:State closed="true" closedHeight="50.0" closedWidth="50.0" innerGraphDisplayEnabled="false"/>
+              <y:Insets bottom="5" bottomF="5.0" left="5" leftF="5.0" right="5" rightF="5.0" top="5" topF="5.0"/>
+              <y:BorderInsets bottom="0" bottomF="0.0" left="0" leftF="0.0" right="0" rightF="0.0" top="0" topF="0.0"/>
+            </y:GroupNode>
+          </y:Realizers>
+        </y:ProxyAutoBoundsNode>
+      </data>
+      <graph edgedefault="directed" id="n2:">
+        <node id="n2::n0">
+          <data key="d5"/>
+          <data key="d6">
+            <y:GenericNode configuration="BevelNode2">
+              <y:Geometry height="58.23595466613767" width="149.79999999999995" x="184.42851943969714" y="15.224399948120208"/>
+              <y:Fill color="#00CCFF" transparent="false"/>
+              <y:BorderStyle hasColor="false" type="line" width="1.0"/>
+              <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" hasText="false" height="4.0" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="4.0" x="72.89999999999998" y="27.117977333068836">
+                <y:LabelModel>
+                  <y:SmartNodeLabelModel distance="4.0"/>
+                </y:LabelModel>
+                <y:ModelParameter>
+                  <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+                </y:ModelParameter>
+              </y:NodeLabel>
+            </y:GenericNode>
+          </data>
+        </node>
+        <node id="n2::n1">
+          <data key="d6">
+            <y:SVGNode>
+              <y:Geometry height="31.250017166137695" width="46.25" x="196.45533981323234" y="28.717368698120254"/>
+              <y:Fill color="#CCCCFF" transparent="false"/>
+              <y:BorderStyle color="#000000" type="line" width="1.0"/>
+              <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" hasText="false" height="4.0" horizontalTextPosition="center" iconTextGap="4" modelName="sandwich" modelPosition="s" textColor="#000000" verticalTextPosition="bottom" visible="true" width="4.0" x="21.125" y="35.250017166137695"/>
+              <y:SVGNodeProperties usingVisualBounds="true"/>
+              <y:SVGModel svgBoundsPolicy="0">
+                <y:SVGContent refid="2"/>
+              </y:SVGModel>
+            </y:SVGNode>
+          </data>
+        </node>
+        <node id="n2::n2">
+          <data key="d6">
+            <y:SVGNode>
+              <y:Geometry height="31.250017166137695" width="46.25" x="272.70533981323234" y="28.717368698120254"/>
+              <y:Fill color="#CCCCFF" transparent="false"/>
+              <y:BorderStyle color="#000000" type="line" width="1.0"/>
+              <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" hasText="false" height="4.0" horizontalTextPosition="center" iconTextGap="4" modelName="sandwich" modelPosition="s" textColor="#000000" verticalTextPosition="bottom" visible="true" width="4.0" x="21.125" y="35.250017166137695"/>
+              <y:SVGNodeProperties usingVisualBounds="true"/>
+              <y:SVGModel svgBoundsPolicy="0">
+                <y:SVGContent refid="2"/>
+              </y:SVGModel>
+            </y:SVGNode>
+          </data>
+        </node>
+      </graph>
+    </node>
+    <node id="n3" yfiles.foldertype="group">
+      <data key="d4"/>
+      <data key="d5"/>
+      <data key="d6">
+        <y:ProxyAutoBoundsNode>
+          <y:Realizers active="0">
+            <y:GroupNode>
+              <y:Geometry height="109.69689216613767" width="179.79999999999995" x="169.42851943969714" y="188.8415874481202"/>
+              <y:Fill color="#F5F5F5" transparent="false"/>
+              <y:BorderStyle color="#000000" type="dashed" width="1.0"/>
+              <y:NodeLabel alignment="right" autoSizePolicy="node_width" backgroundColor="#EBEBEB" borderDistance="0.0" fontFamily="Dialog" fontSize="15" fontStyle="plain" hasLineColor="false" height="21.4609375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="179.79999999999995" x="0.0" y="0.0">Router-Internal</y:NodeLabel>
+              <y:Shape type="roundrectangle"/>
+              <y:State closed="false" closedHeight="50.0" closedWidth="50.0" innerGraphDisplayEnabled="false"/>
+              <y:Insets bottom="15" bottomF="15.0" left="15" leftF="15.0" right="15" rightF="15.0" top="15" topF="15.0"/>
+              <y:BorderInsets bottom="0" bottomF="0.0" left="0" leftF="0.0" right="0" rightF="0.0" top="0" topF="0.0"/>
+            </y:GroupNode>
+            <y:GroupNode>
+              <y:Geometry height="50.0" width="50.0" x="0.0" y="60.0"/>
+              <y:Fill color="#F5F5F5" transparent="false"/>
+              <y:BorderStyle color="#000000" type="dashed" width="1.0"/>
+              <y:NodeLabel alignment="right" autoSizePolicy="node_width" backgroundColor="#EBEBEB" borderDistance="0.0" fontFamily="Dialog" fontSize="15" fontStyle="plain" hasLineColor="false" height="21.4609375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="65.201171875" x="-7.6005859375" y="0.0">Folder 1</y:NodeLabel>
+              <y:Shape type="roundrectangle"/>
+              <y:State closed="true" closedHeight="50.0" closedWidth="50.0" innerGraphDisplayEnabled="false"/>
+              <y:Insets bottom="5" bottomF="5.0" left="5" leftF="5.0" right="5" rightF="5.0" top="5" topF="5.0"/>
+              <y:BorderInsets bottom="0" bottomF="0.0" left="0" leftF="0.0" right="0" rightF="0.0" top="0" topF="0.0"/>
+            </y:GroupNode>
+          </y:Realizers>
+        </y:ProxyAutoBoundsNode>
+      </data>
+      <graph edgedefault="directed" id="n3:">
+        <node id="n3::n0">
+          <data key="d5"/>
+          <data key="d6">
+            <y:GenericNode configuration="BevelNode2">
+              <y:Geometry height="58.23595466613767" width="149.79999999999995" x="184.42851943969714" y="225.3025249481202"/>
+              <y:Fill color="#00CCFF" transparent="false"/>
+              <y:BorderStyle hasColor="false" type="line" width="1.0"/>
+              <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" hasText="false" height="4.0" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="4.0" x="72.89999999999998" y="27.117977333068836">
+                <y:LabelModel>
+                  <y:SmartNodeLabelModel distance="4.0"/>
+                </y:LabelModel>
+                <y:ModelParameter>
+                  <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+                </y:ModelParameter>
+              </y:NodeLabel>
+            </y:GenericNode>
+          </data>
+        </node>
+        <node id="n3::n1">
+          <data key="d6">
+            <y:SVGNode>
+              <y:Geometry height="31.250017166137695" width="46.25" x="196.45533981323234" y="238.79549369812025"/>
+              <y:Fill color="#CCCCFF" transparent="false"/>
+              <y:BorderStyle color="#000000" type="line" width="1.0"/>
+              <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" hasText="false" height="4.0" horizontalTextPosition="center" iconTextGap="4" modelName="sandwich" modelPosition="s" textColor="#000000" verticalTextPosition="bottom" visible="true" width="4.0" x="21.125" y="35.250017166137695"/>
+              <y:SVGNodeProperties usingVisualBounds="true"/>
+              <y:SVGModel svgBoundsPolicy="0">
+                <y:SVGContent refid="2"/>
+              </y:SVGModel>
+            </y:SVGNode>
+          </data>
+        </node>
+        <node id="n3::n2">
+          <data key="d6">
+            <y:SVGNode>
+              <y:Geometry height="31.250017166137695" width="46.25" x="272.70533981323234" y="238.79549369812025"/>
+              <y:Fill color="#CCCCFF" transparent="false"/>
+              <y:BorderStyle color="#000000" type="line" width="1.0"/>
+              <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" hasText="false" height="4.0" horizontalTextPosition="center" iconTextGap="4" modelName="sandwich" modelPosition="s" textColor="#000000" verticalTextPosition="bottom" visible="true" width="4.0" x="21.125" y="35.250017166137695"/>
+              <y:SVGNodeProperties usingVisualBounds="true"/>
+              <y:SVGModel svgBoundsPolicy="0">
+                <y:SVGContent refid="2"/>
+              </y:SVGModel>
+            </y:SVGNode>
+          </data>
+        </node>
+      </graph>
+    </node>
+    <node id="n4" yfiles.foldertype="group">
+      <data key="d4"/>
+      <data key="d5"/>
+      <data key="d6">
+        <y:ProxyAutoBoundsNode>
+          <y:Realizers active="0">
+            <y:GroupNode>
+              <y:Geometry height="109.69689216613767" width="179.79999999999995" x="465.3191444396971" y="188.8415874481202"/>
+              <y:Fill color="#F5F5F5" transparent="false"/>
+              <y:BorderStyle color="#000000" type="dashed" width="1.0"/>
+              <y:NodeLabel alignment="right" autoSizePolicy="node_width" backgroundColor="#EBEBEB" borderDistance="0.0" fontFamily="Dialog" fontSize="15" fontStyle="plain" hasLineColor="false" height="21.4609375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="179.79999999999995" x="0.0" y="0.0">Router-DEV</y:NodeLabel>
+              <y:Shape type="roundrectangle"/>
+              <y:State closed="false" closedHeight="50.0" closedWidth="50.0" innerGraphDisplayEnabled="false"/>
+              <y:Insets bottom="15" bottomF="15.0" left="15" leftF="15.0" right="15" rightF="15.0" top="15" topF="15.0"/>
+              <y:BorderInsets bottom="0" bottomF="0.0" left="0" leftF="0.0" right="0" rightF="0.0" top="0" topF="0.0"/>
+            </y:GroupNode>
+            <y:GroupNode>
+              <y:Geometry height="50.0" width="50.0" x="0.0" y="60.0"/>
+              <y:Fill color="#F5F5F5" transparent="false"/>
+              <y:BorderStyle color="#000000" type="dashed" width="1.0"/>
+              <y:NodeLabel alignment="right" autoSizePolicy="node_width" backgroundColor="#EBEBEB" borderDistance="0.0" fontFamily="Dialog" fontSize="15" fontStyle="plain" hasLineColor="false" height="21.4609375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="65.201171875" x="-7.6005859375" y="0.0">Folder 1</y:NodeLabel>
+              <y:Shape type="roundrectangle"/>
+              <y:State closed="true" closedHeight="50.0" closedWidth="50.0" innerGraphDisplayEnabled="false"/>
+              <y:Insets bottom="5" bottomF="5.0" left="5" leftF="5.0" right="5" rightF="5.0" top="5" topF="5.0"/>
+              <y:BorderInsets bottom="0" bottomF="0.0" left="0" leftF="0.0" right="0" rightF="0.0" top="0" topF="0.0"/>
+            </y:GroupNode>
+          </y:Realizers>
+        </y:ProxyAutoBoundsNode>
+      </data>
+      <graph edgedefault="directed" id="n4:">
+        <node id="n4::n0">
+          <data key="d5"/>
+          <data key="d6">
+            <y:GenericNode configuration="BevelNode2">
+              <y:Geometry height="58.23595466613767" width="149.79999999999995" x="480.3191444396971" y="225.3025249481202"/>
+              <y:Fill color="#00CCFF" transparent="false"/>
+              <y:BorderStyle hasColor="false" type="line" width="1.0"/>
+              <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" hasText="false" height="4.0" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="4.0" x="72.89999999999998" y="27.117977333068836">
+                <y:LabelModel>
+                  <y:SmartNodeLabelModel distance="4.0"/>
+                </y:LabelModel>
+                <y:ModelParameter>
+                  <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+                </y:ModelParameter>
+              </y:NodeLabel>
+            </y:GenericNode>
+          </data>
+        </node>
+        <node id="n4::n1">
+          <data key="d6">
+            <y:SVGNode>
+              <y:Geometry height="31.250017166137695" width="46.25" x="492.3459648132323" y="238.79549369812025"/>
+              <y:Fill color="#CCCCFF" transparent="false"/>
+              <y:BorderStyle color="#000000" type="line" width="1.0"/>
+              <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" hasText="false" height="4.0" horizontalTextPosition="center" iconTextGap="4" modelName="sandwich" modelPosition="s" textColor="#000000" verticalTextPosition="bottom" visible="true" width="4.0" x="21.125" y="35.250017166137695"/>
+              <y:SVGNodeProperties usingVisualBounds="true"/>
+              <y:SVGModel svgBoundsPolicy="0">
+                <y:SVGContent refid="2"/>
+              </y:SVGModel>
+            </y:SVGNode>
+          </data>
+        </node>
+        <node id="n4::n2">
+          <data key="d6">
+            <y:SVGNode>
+              <y:Geometry height="31.250017166137695" width="46.25" x="568.5959648132323" y="238.79549369812025"/>
+              <y:Fill color="#CCCCFF" transparent="false"/>
+              <y:BorderStyle color="#000000" type="line" width="1.0"/>
+              <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" hasText="false" height="4.0" horizontalTextPosition="center" iconTextGap="4" modelName="sandwich" modelPosition="s" textColor="#000000" verticalTextPosition="bottom" visible="true" width="4.0" x="21.125" y="35.250017166137695"/>
+              <y:SVGNodeProperties usingVisualBounds="true"/>
+              <y:SVGModel svgBoundsPolicy="0">
+                <y:SVGContent refid="2"/>
+              </y:SVGModel>
+            </y:SVGNode>
+          </data>
+        </node>
+      </graph>
+    </node>
+    <node id="n5">
+      <data key="d6">
+        <y:SVGNode>
+          <y:Geometry height="115.83100509643555" width="179.79999999999995" x="465.3191444396971" y="363.7094974517822"/>
+          <y:Fill color="#CCCCFF" transparent="false"/>
+          <y:BorderStyle color="#000000" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" hasText="false" height="4.0" horizontalTextPosition="center" iconTextGap="4" modelName="sandwich" modelPosition="s" textColor="#000000" verticalTextPosition="bottom" visible="true" width="4.0" x="87.89999999999998" y="119.83100509643555"/>
+          <y:SVGNodeProperties usingVisualBounds="true"/>
+          <y:SVGModel svgBoundsPolicy="0">
+            <y:SVGContent refid="3"/>
+          </y:SVGModel>
+        </y:SVGNode>
+      </data>
+    </node>
+    <node id="n6">
+      <data key="d6">
+        <y:SVGNode>
+          <y:Geometry height="115.83100509643555" width="179.79999999999995" x="725.1382888793942" y="182.70747451782233"/>
+          <y:Fill color="#CCCCFF" transparent="false"/>
+          <y:BorderStyle color="#000000" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" hasText="false" height="4.0" horizontalTextPosition="center" iconTextGap="4" modelName="sandwich" modelPosition="s" textColor="#000000" verticalTextPosition="bottom" visible="true" width="4.0" x="87.89999999999998" y="119.83100509643555"/>
+          <y:SVGNodeProperties usingVisualBounds="true"/>
+          <y:SVGModel svgBoundsPolicy="0">
+            <y:SVGContent refid="3"/>
+          </y:SVGModel>
+        </y:SVGNode>
+      </data>
+    </node>
+    <node id="n7">
+      <data key="d6">
+        <y:SVGNode>
+          <y:Geometry height="115.83100509643555" width="179.79999999999995" x="-86.170266723635" y="196.50499973297133"/>
+          <y:Fill color="#CCCCFF" transparent="false"/>
+          <y:BorderStyle color="#000000" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" hasText="false" height="4.0" horizontalTextPosition="center" iconTextGap="4" modelName="sandwich" modelPosition="s" textColor="#000000" verticalTextPosition="bottom" visible="true" width="4.0" x="87.89999999999998" y="119.83100509643555"/>
+          <y:SVGNodeProperties usingVisualBounds="true"/>
+          <y:SVGModel svgBoundsPolicy="0">
+            <y:SVGContent refid="3"/>
+          </y:SVGModel>
+        </y:SVGNode>
+      </data>
+    </node>
+    <node id="n8">
+      <data key="d6">
+        <y:SVGNode>
+          <y:Geometry height="115.83100509643555" width="179.79999999999995" x="169.4285194396972" y="363.7094974517822"/>
+          <y:Fill color="#CCCCFF" transparent="false"/>
+          <y:BorderStyle color="#000000" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" hasText="false" height="4.0" horizontalTextPosition="center" iconTextGap="4" modelName="sandwich" modelPosition="s" textColor="#000000" verticalTextPosition="bottom" visible="true" width="4.0" x="87.89999999999998" y="119.83100509643555"/>
+          <y:SVGNodeProperties usingVisualBounds="true"/>
+          <y:SVGModel svgBoundsPolicy="0">
+            <y:SVGContent refid="3"/>
+          </y:SVGModel>
+        </y:SVGNode>
+      </data>
+    </node>
+    <node id="n9">
+      <data key="d6">
+        <y:SVGNode>
+          <y:Geometry height="115.83100509643555" width="179.79999999999995" x="-102.420266723635" y="-21.236537551879792"/>
+          <y:Fill color="#CCCCFF" transparent="false"/>
+          <y:BorderStyle color="#000000" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" hasText="false" height="4.0" horizontalTextPosition="center" iconTextGap="4" modelName="sandwich" modelPosition="s" textColor="#000000" verticalTextPosition="bottom" visible="true" width="4.0" x="87.89999999999998" y="119.83100509643555"/>
+          <y:SVGNodeProperties usingVisualBounds="true"/>
+          <y:SVGModel svgBoundsPolicy="0">
+            <y:SVGContent refid="3"/>
+          </y:SVGModel>
+        </y:SVGNode>
+      </data>
+    </node>
+    <node id="n10">
+      <data key="d6">
+        <y:SVGNode>
+          <y:Geometry height="115.83100509643555" width="179.79999999999995" x="472.8191444396971" y="-21.236537551879792"/>
+          <y:Fill color="#CCCCFF" transparent="false"/>
+          <y:BorderStyle color="#000000" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" hasText="false" height="4.0" horizontalTextPosition="center" iconTextGap="4" modelName="sandwich" modelPosition="s" textColor="#000000" verticalTextPosition="bottom" visible="true" width="4.0" x="87.89999999999998" y="119.83100509643555"/>
+          <y:SVGNodeProperties usingVisualBounds="true"/>
+          <y:SVGModel svgBoundsPolicy="0">
+            <y:SVGContent refid="3"/>
+          </y:SVGModel>
+        </y:SVGNode>
+      </data>
+    </node>
+    <edge id="n1::e0" source="n1::n1" target="n1::n2">
+      <data key="d9"/>
+      <data key="d10">
+        <y:PolyLineEdge>
+          <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="none"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="n2::e0" source="n2::n1" target="n2::n2">
+      <data key="d9"/>
+      <data key="d10">
+        <y:PolyLineEdge>
+          <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="none"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="n3::e0" source="n3::n1" target="n3::n2">
+      <data key="d9"/>
+      <data key="d10">
+        <y:PolyLineEdge>
+          <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="none"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="n4::e0" source="n4::n1" target="n4::n2">
+      <data key="d9"/>
+      <data key="d10">
+        <y:PolyLineEdge>
+          <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="none"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e0" source="n0" target="n1::n0">
+      <data key="d9"/>
+      <data key="d10">
+        <y:PolyLineEdge>
+          <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="none"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e1" source="n1" target="n2">
+      <data key="d9"/>
+      <data key="d10">
+        <y:PolyLineEdge>
+          <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="none"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e2" source="n2" target="n10">
+      <data key="d9"/>
+      <data key="d10">
+        <y:PolyLineEdge>
+          <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="none"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e3" source="n2" target="n9">
+      <data key="d9"/>
+      <data key="d10">
+        <y:PolyLineEdge>
+          <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="none"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e4" source="n2" target="n3">
+      <data key="d9"/>
+      <data key="d10">
+        <y:PolyLineEdge>
+          <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0">
+            <y:Point x="259.3285194396971" y="184.1875"/>
+          </y:Path>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="none"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e5" source="n3" target="n4">
+      <data key="d9"/>
+      <data key="d10">
+        <y:PolyLineEdge>
+          <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="none"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e6" source="n4" target="n6">
+      <data key="d9"/>
+      <data key="d10">
+        <y:PolyLineEdge>
+          <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="none"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e7" source="n4::n0" target="n5">
+      <data key="d9"/>
+      <data key="d10">
+        <y:PolyLineEdge>
+          <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="none"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e8" source="n3" target="n7">
+      <data key="d9"/>
+      <data key="d10">
+        <y:PolyLineEdge>
+          <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0">
+            <y:Point x="78.0" y="243.69003353118904"/>
+          </y:Path>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="none"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e9" source="n3::n0" target="n8">
+      <data key="d9"/>
+      <data key="d10">
+        <y:PolyLineEdge>
+          <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="none"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+  </graph>
+  <data key="d7">
+    <y:Resources>
+      <y:Resource id="1">&lt;?xml version="1.0" encoding="UTF-8" standalone="no"?&gt;
+&lt;svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   viewBox="0 0 102.85 59.825001"
+   height="59.825001"
+   width="102.85"
+   xml:space="preserve"
+   version="1.1"
+   id="svg2"&gt;&lt;metadata
+     id="metadata8"&gt;&lt;rdf:RDF&gt;&lt;cc:Work
+         rdf:about=""&gt;&lt;dc:format&gt;image/svg+xml&lt;/dc:format&gt;&lt;dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /&gt;&lt;/cc:Work&gt;&lt;/rdf:RDF&gt;&lt;/metadata&gt;&lt;defs
+     id="defs6"&gt;&lt;clipPath
+       id="clipPath18"
+       clipPathUnits="userSpaceOnUse"&gt;&lt;path
+         id="path20"
+         d="m 0,0 820,0 0,478.648 -820,0 L 0,0 Z" /&gt;&lt;/clipPath&gt;&lt;/defs&gt;&lt;g
+     transform="matrix(1.25,0,0,-1.25,0,59.825)"
+     id="g10"&gt;&lt;g
+       transform="scale(0.1,0.1)"
+       id="g12"&gt;&lt;g
+         id="g14"&gt;&lt;g
+           clip-path="url(#clipPath18)"
+           id="g16"&gt;&lt;path
+             id="path22"
+             style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             d="m 285.762,421.988 c -144.004,28.75 -220.0003,-45 -207.9964,-108.75 l 0.9649,-3.476 C -33.4844,290.664 -4.07422,158.238 49.7578,158.238 l 5.3008,0.164 C 41.5039,96.1797 172.637,32.8516 245.762,64.4922 l 4.699,5.1445 C 276.531,13.6719 369.16,4.31641 460.762,1.99219 540.145,-0.0390625 586.477,6.23828 620.52,41.0352 l 5.242,-1.543 c 127.07,-10.2149 184.941,77.5508 157.16,140.5708 l 6.836,1.925 c 43.316,11.453 48.316,111.453 -25.996,126.25 l 1.426,3.871 c 32.261,65.055 -43.833,126.403 -149.426,114.879 l -7.317,3.817 c -75.586,68.441 -293.14,57.285 -318.34,-10.407 l -4.343,1.59" /&gt;&lt;path
+             id="path24"
+             style="fill:none;stroke:#02709f;stroke-width:3.99993992;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             d="m 285.762,421.988 c -144.004,28.75 -220.0003,-45 -207.9964,-108.75 l 0.9649,-3.476 C -33.4844,290.664 -4.07422,158.238 49.7578,158.238 l 5.3008,0.164 C 41.5039,96.1797 172.637,32.8516 245.762,64.4922 l 4.699,5.1445 C 276.531,13.6719 369.16,4.31641 460.762,1.99219 540.145,-0.0390625 586.477,6.23828 620.52,41.0352 l 5.242,-1.543 c 127.07,-10.2149 184.941,77.5508 157.16,140.5708 l 6.836,1.925 c 43.316,11.453 48.316,111.453 -25.996,126.25 l 1.426,3.871 c 32.261,65.055 -43.833,126.403 -149.426,114.879 l -7.317,3.817 c -75.586,68.441 -293.14,57.285 -318.34,-10.407 l -4.343,1.59 z" /&gt;&lt;/g&gt;&lt;/g&gt;&lt;/g&gt;&lt;/g&gt;&lt;/svg&gt;</y:Resource>
+      <y:Resource id="2">&lt;?xml version="1.0" encoding="UTF-8" standalone="no"?&gt;
+&lt;svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   viewBox="0 0 46.450001 31.475"
+   height="31.475"
+   width="46.450001"
+   xml:space="preserve"
+   version="1.1"
+   id="svg2"&gt;&lt;metadata
+     id="metadata8"&gt;&lt;rdf:RDF&gt;&lt;cc:Work
+         rdf:about=""&gt;&lt;dc:format&gt;image/svg+xml&lt;/dc:format&gt;&lt;dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /&gt;&lt;/cc:Work&gt;&lt;/rdf:RDF&gt;&lt;/metadata&gt;&lt;defs
+     id="defs6"&gt;&lt;clipPath
+       id="clipPath18"
+       clipPathUnits="userSpaceOnUse"&gt;&lt;path
+         id="path20"
+         d="m 0,251.797 370,0 0,-250.00012 -370,0 0,250.00012" /&gt;&lt;/clipPath&gt;&lt;/defs&gt;&lt;g
+     transform="matrix(1.25,0,0,-1.25,0,31.475)"
+     id="g10"&gt;&lt;g
+       transform="scale(0.1,0.1)"
+       id="g12"&gt;&lt;g
+         id="g14"&gt;&lt;g
+           clip-path="url(#clipPath18)"
+           id="g16"&gt;&lt;path
+             id="path22"
+             style="fill:#026c9b;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             d="m 369.855,178.281 c 0,-39.504 -82.343,-71.523 -183.925,-71.523 C 84.3477,106.758 2,138.777 2,178.281 L 2,73.5156 c 0,-39.5 82.3477,-71.52341 183.93,-71.52341 101.582,0 183.925,32.02341 183.925,71.52341 l 0,104.7654" /&gt;&lt;path
+             id="path24"
+             style="fill:none;stroke:#ffffff;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             d="m 369.855,178.281 c 0,-39.504 -82.343,-71.523 -183.925,-71.523 C 84.3477,106.758 2,138.777 2,178.281 L 2,73.5156 c 0,-39.5 82.3477,-71.52341 183.93,-71.52341 101.582,0 183.925,32.02341 183.925,71.52341 l 0,104.7654 z" /&gt;&lt;path
+             id="path26"
+             style="fill:#026c9b;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             d="m 185.93,106.758 c 101.582,0 183.925,32.019 183.925,71.523 0,39.512 -82.343,71.524 -183.925,71.524 C 84.3477,249.805 2,217.793 2,178.281 2,138.777 84.3477,106.758 185.93,106.758" /&gt;&lt;path
+             id="path28"
+             style="fill:none;stroke:#ffffff;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             d="m 185.93,106.758 c 101.582,0 183.925,32.019 183.925,71.523 0,39.512 -82.343,71.524 -183.925,71.524 C 84.3477,249.805 2,217.793 2,178.281 2,138.777 84.3477,106.758 185.93,106.758 Z" /&gt;&lt;path
+             id="path30"
+             style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             d="m 143.926,206.25 15.183,-22.781 -57.421,-13.274 12.55,10.45 -88.7497,15.168 22.2656,16.687 85.6371,-14.5 10.535,8.25" /&gt;&lt;path
+             id="path32"
+             style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             d="m 224.727,151.008 -10.364,23.484 51.797,10.352 -8.98,-8.047 86.328,-14.746 -20.715,-16.571 -85.813,16.114 -12.253,-10.586" /&gt;&lt;path
+             id="path34"
+             style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             d="m 196.406,218.691 58.02,15.879 0.679,-24.863 -14.5,2.766 -28.308,-23.489 -27.024,3.946 29.231,22.968 -18.098,2.793" /&gt;&lt;path
+             id="path36"
+             style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             d="m 171.543,129.59 -55.242,-10.352 -2.071,25.547 15.875,-3.445 30.415,25.965 26.914,-4.551 -32.461,-28.32 16.57,-4.844" /&gt;&lt;/g&gt;&lt;/g&gt;&lt;/g&gt;&lt;/g&gt;&lt;/svg&gt;</y:Resource>
+      <y:Resource id="3">&lt;?xml version="1.0" encoding="UTF-8" standalone="no"?&gt;
+&lt;svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   viewBox="0 0 102.85 59.825001"
+   height="59.825001"
+   width="102.85"
+   xml:space="preserve"
+   version="1.1"
+   id="svg2"&gt;&lt;metadata
+     id="metadata8"&gt;&lt;rdf:RDF&gt;&lt;cc:Work
+         rdf:about=""&gt;&lt;dc:format&gt;image/svg+xml&lt;/dc:format&gt;&lt;dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /&gt;&lt;/cc:Work&gt;&lt;/rdf:RDF&gt;&lt;/metadata&gt;&lt;defs
+     id="defs6"&gt;&lt;clipPath
+       id="clipPath18"
+       clipPathUnits="userSpaceOnUse"&gt;&lt;path
+         id="path20"
+         d="m 0,0 820,0 0,478.648 -820,0 L 0,0 Z" /&gt;&lt;/clipPath&gt;&lt;/defs&gt;&lt;g
+     transform="matrix(1.25,0,0,-1.25,0,59.825)"
+     id="g10"&gt;&lt;g
+       transform="scale(0.1,0.1)"
+       id="g12"&gt;&lt;g
+         id="g14"&gt;&lt;g
+           clip-path="url(#clipPath18)"
+           id="g16"&gt;&lt;path
+             id="path22"
+             style="fill:#036998;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             d="m 511.367,132.598 -18.496,-26.387 -160.664,0 26.531,26.387 152.629,0" /&gt;&lt;path
+             id="path24"
+             style="fill:none;stroke:#ffffff;stroke-width:3.99993992;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             d="m 511.367,132.598 -18.496,-26.387 -160.664,0 26.531,26.387 152.629,0 z" /&gt;&lt;path
+             id="path26"
+             style="fill:#036998;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             d="m 332.207,77.4805 153.367,0 0,28.7305 -153.367,0 0,-28.7305 z" /&gt;&lt;path
+             id="path28"
+             style="fill:none;stroke:#ffffff;stroke-width:3.99993992;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             d="m 332.207,77.4805 153.367,0 0,28.7305 -153.367,0 0,-28.7305 z" /&gt;&lt;path
+             id="path30"
+             style="fill:#036998;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             d="m 481.023,40.3398 0,9.1719 20.024,27.8008 0,-16.9531 -20.024,-20.0196" /&gt;&lt;path
+             id="path32"
+             style="fill:none;stroke:#ffffff;stroke-width:3.99993992;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             d="m 481.023,40.3398 0,9.1719 20.024,27.8008 0,-16.9531 -20.024,-20.0196 z" /&gt;&lt;path
+             id="path34"
+             style="fill:#036998;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             d="m 304.719,40.3398 176.305,0 0,9.17188 -176.305,0 0,-9.17188 z" /&gt;&lt;path
+             id="path36"
+             style="fill:none;stroke:#ffffff;stroke-width:3.99993992;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             d="m 304.719,40.3398 176.305,0 0,9.17188 -176.305,0 0,-9.17188 z" /&gt;&lt;path
+             id="path38"
+             style="fill:#036998;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             d="m 332.207,112.527 152.336,0 0,115.266 -152.336,0 0,-115.266 z" /&gt;&lt;path
+             id="path40"
+             style="fill:none;stroke:#ffffff;stroke-width:3.99993992;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             d="m 332.207,112.527 152.336,0 0,115.266 -152.336,0 0,-115.266 z" /&gt;&lt;path
+             id="path42"
+             style="fill:#036998;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             d="m 484.543,112.527 26.082,26.086 0,115.262 -26.082,-26.082 0,-115.266" /&gt;&lt;path
+             id="path44"
+             style="fill:none;stroke:#ffffff;stroke-width:3.99993992;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             d="m 484.543,112.527 26.082,26.086 0,115.262 -26.082,-26.082 0,-115.266 z" /&gt;&lt;path
+             id="path46"
+             style="fill:#036998;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             d="m 481.023,49.5117 -176.304,0 20.398,27.8008 175.93,0 -20.024,-27.8008" /&gt;&lt;path
+             id="path48"
+             style="fill:none;stroke:#ffffff;stroke-width:3.99993992;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             d="m 481.023,49.5117 -176.304,0 20.398,27.8008 175.93,0 -20.024,-27.8008 z" /&gt;&lt;path
+             id="path50"
+             style="fill:#036998;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             d="m 485.449,77.4023 0,28.8087 25.918,25.742 0,-28.633 -25.918,-25.9177" /&gt;&lt;path
+             id="path52"
+             style="fill:none;stroke:#ffffff;stroke-width:3.99993992;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             d="m 485.449,77.4023 0,28.8087 25.918,25.742 0,-28.633 -25.918,-25.9177 z" /&gt;&lt;path
+             id="path54"
+             style="fill:#036998;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             d="m 357.043,214.512 102.156,0 c 6.653,0 12.039,-5.391 12.039,-12.032 l 0,-64.55 c 0,-6.641 -5.386,-12.032 -12.039,-12.032 l -102.156,0 c -6.652,0 -12.043,5.391 -12.043,12.032 l 0,64.55 c 0,6.641 5.391,12.032 12.043,12.032" /&gt;&lt;path
+             id="path56"
+             style="fill:none;stroke:#ffffff;stroke-width:3.99993992;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             d="m 357.043,214.512 102.156,0 c 6.653,0 12.039,-5.391 12.039,-12.032 l 0,-64.55 c 0,-6.641 -5.386,-12.032 -12.039,-12.032 l -102.156,0 c -6.652,0 -12.043,5.391 -12.043,12.032 l 0,64.55 c 0,6.641 5.391,12.032 12.043,12.032 z" /&gt;&lt;path
+             id="path58"
+             style="fill:#036998;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             d="m 510.625,253.875 -148.691,0 -29.727,-26.082 152.336,0 26.082,26.082" /&gt;&lt;path
+             id="path60"
+             style="fill:none;stroke:#ffffff;stroke-width:3.99993992;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             d="m 510.625,253.875 -148.691,0 -29.727,-26.082 152.336,0 26.082,26.082 z" /&gt;&lt;path
+             id="path62"
+             style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             d="m 395.305,193.77 c -18.672,3.73 -28.535,-5.84 -26.977,-14.102 l 0.117,-0.449 c -14.55,-2.481 -10.73,-19.66 -3.75,-19.66 l 0.688,0.031 c -1.621,-11.856 15.879,-18.848 24.734,-12.188 l 0.613,0.664 c 2.778,-11.269 40.391,-12.14 47.993,-3.711 l 0.679,-0.195 c 16.489,-1.328 23.989,10.059 20.383,18.231 l 0.891,0.246 c 5.613,1.492 6.265,14.461 -3.379,16.386 l 0.191,0.497 c 4.184,8.429 -5.679,16.398 -19.383,14.894 l -0.949,0.496 c -9.801,8.879 -38.023,7.434 -41.289,-1.347 l -0.562,0.207" /&gt;&lt;path
+             id="path64"
+             style="fill:#036998;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             d="m 741.367,262.598 -18.496,-26.387 -160.664,0 26.531,26.387 152.629,0" /&gt;&lt;path
+             id="path66"
+             style="fill:none;stroke:#ffffff;stroke-width:3.99993992;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             d="m 741.367,262.598 -18.496,-26.387 -160.664,0 26.531,26.387 152.629,0 z" /&gt;&lt;path
+             id="path68"
+             style="fill:#036998;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             d="m 562.207,207.48 153.367,0 0,28.7305 -153.367,0 0,-28.7305 z" /&gt;&lt;path
+             id="path70"
+             style="fill:none;stroke:#ffffff;stroke-width:3.99993992;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             d="m 562.207,207.48 153.367,0 0,28.7305 -153.367,0 0,-28.7305 z" /&gt;&lt;path
+             id="path72"
+             style="fill:#036998;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             d="m 711.023,170.34 0,9.172 20.024,27.801 0,-16.954 -20.024,-20.019" /&gt;&lt;path
+             id="path74"
+             style="fill:none;stroke:#ffffff;stroke-width:3.99993992;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             d="m 711.023,170.34 0,9.172 20.024,27.801 0,-16.954 -20.024,-20.019 z" /&gt;&lt;path
+             id="path76"
+             style="fill:#036998;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             d="m 534.719,170.34 176.305,0 0,9.17188 -176.305,0 0,-9.17188 z" /&gt;&lt;path
+             id="path78"
+             style="fill:none;stroke:#ffffff;stroke-width:3.99993992;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             d="m 534.719,170.34 176.305,0 0,9.17188 -176.305,0 0,-9.17188 z" /&gt;&lt;path
+             id="path80"
+             style="fill:#036998;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             d="m 562.207,242.527 152.336,0 0,115.266 -152.336,0 0,-115.266 z" /&gt;&lt;path
+             id="path82"
+             style="fill:none;stroke:#ffffff;stroke-width:3.99993992;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             d="m 562.207,242.527 152.336,0 0,115.266 -152.336,0 0,-115.266 z" /&gt;&lt;path
+             id="path84"
+             style="fill:#036998;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             d="m 714.543,242.527 26.082,26.09 0,115.258 -26.082,-26.082 0,-115.266" /&gt;&lt;path
+             id="path86"
+             style="fill:none;stroke:#ffffff;stroke-width:3.99993992;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             d="m 714.543,242.527 26.082,26.09 0,115.258 -26.082,-26.082 0,-115.266 z" /&gt;&lt;path
+             id="path88"
+             style="fill:#036998;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             d="m 711.023,179.512 -176.304,0 20.398,27.801 175.93,0 -20.024,-27.801" /&gt;&lt;path
+             id="path90"
+             style="fill:none;stroke:#ffffff;stroke-width:3.99993992;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             d="m 711.023,179.512 -176.304,0 20.398,27.801 175.93,0 -20.024,-27.801 z" /&gt;&lt;path
+             id="path92"
+             style="fill:#036998;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             d="m 715.449,207.402 0,28.809 25.918,25.746 0,-28.637 -25.918,-25.918" /&gt;&lt;path
+             id="path94"
+             style="fill:none;stroke:#ffffff;stroke-width:3.99993992;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             d="m 715.449,207.402 0,28.809 25.918,25.746 0,-28.637 -25.918,-25.918 z" /&gt;&lt;path
+             id="path96"
+             style="fill:#036998;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             d="m 587.043,344.516 102.156,0 c 6.653,0 12.039,-5.391 12.039,-12.039 l 0,-64.543 c 0,-6.645 -5.386,-12.036 -12.039,-12.036 l -102.156,0 c -6.652,0 -12.043,5.391 -12.043,12.036 l 0,64.543 c 0,6.648 5.391,12.039 12.043,12.039" /&gt;&lt;path
+             id="path98"
+             style="fill:none;stroke:#ffffff;stroke-width:3.99993992;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             d="m 587.043,344.516 102.156,0 c 6.653,0 12.039,-5.391 12.039,-12.039 l 0,-64.543 c 0,-6.645 -5.386,-12.036 -12.039,-12.036 l -102.156,0 c -6.652,0 -12.043,5.391 -12.043,12.036 l 0,64.543 c 0,6.648 5.391,12.039 12.043,12.039 z" /&gt;&lt;path
+             id="path100"
+             style="fill:#036998;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             d="m 740.625,383.875 -148.691,0 -29.727,-26.082 152.336,0 26.082,26.082" /&gt;&lt;path
+             id="path102"
+             style="fill:none;stroke:#ffffff;stroke-width:3.99993992;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             d="m 740.625,383.875 -148.691,0 -29.727,-26.082 152.336,0 26.082,26.082 z" /&gt;&lt;path
+             id="path104"
+             style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             d="m 625.305,323.77 c -18.672,3.73 -28.535,-5.836 -26.977,-14.102 l 0.117,-0.453 c -14.55,-2.477 -10.73,-19.656 -3.75,-19.656 l 0.688,0.027 c -1.621,-11.848 15.879,-18.844 24.734,-12.184 l 0.613,0.668 c 2.778,-11.269 40.391,-12.144 47.993,-3.711 l 0.679,-0.199 c 16.489,-1.324 23.989,10.059 20.383,18.231 l 0.891,0.25 c 5.613,1.488 6.265,14.457 -3.379,16.379 l 0.191,0.5 c 4.184,8.433 -5.679,16.394 -19.383,14.898 l -0.949,0.492 c -9.801,8.879 -38.023,7.434 -41.289,-1.347 l -0.562,0.207" /&gt;&lt;path
+             id="path106"
+             style="fill:#036998;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             d="m 296.367,272.598 -18.496,-26.387 -160.664,0 26.531,26.387 152.629,0" /&gt;&lt;path
+             id="path108"
+             style="fill:none;stroke:#ffffff;stroke-width:3.99993992;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             d="m 296.367,272.598 -18.496,-26.387 -160.664,0 26.531,26.387 152.629,0 z" /&gt;&lt;path
+             id="path110"
+             style="fill:#036998;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             d="m 117.207,217.48 153.367,0 0,28.7305 -153.367,0 0,-28.7305 z" /&gt;&lt;path
+             id="path112"
+             style="fill:none;stroke:#ffffff;stroke-width:3.99993992;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             d="m 117.207,217.48 153.367,0 0,28.7305 -153.367,0 0,-28.7305 z" /&gt;&lt;path
+             id="path114"
+             style="fill:#036998;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             d="m 266.023,180.34 0,9.172 20.024,27.801 0,-16.954 -20.024,-20.019" /&gt;&lt;path
+             id="path116"
+             style="fill:none;stroke:#ffffff;stroke-width:3.99993992;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             d="m 266.023,180.34 0,9.172 20.024,27.801 0,-16.954 -20.024,-20.019 z" /&gt;&lt;path
+             id="path118"
+             style="fill:#036998;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             d="m 89.7188,180.34 176.305,0 0,9.17188 -176.305,0 0,-9.17188 z" /&gt;&lt;path
+             id="path120"
+             style="fill:none;stroke:#ffffff;stroke-width:3.99993992;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             d="m 89.7188,180.34 176.305,0 0,9.17188 -176.305,0 0,-9.17188 z" /&gt;&lt;path
+             id="path122"
+             style="fill:#036998;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             d="m 117.207,252.527 152.332,0 0,115.266 -152.332,0 0,-115.266 z" /&gt;&lt;path
+             id="path124"
+             style="fill:none;stroke:#ffffff;stroke-width:3.99993992;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             d="m 117.207,252.527 152.332,0 0,115.266 -152.332,0 0,-115.266 z" /&gt;&lt;path
+             id="path126"
+             style="fill:#036998;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             d="m 269.539,252.527 26.086,26.09 0,115.258 -26.086,-26.082 0,-115.266" /&gt;&lt;path
+             id="path128"
+             style="fill:none;stroke:#ffffff;stroke-width:3.99993992;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             d="m 269.539,252.527 26.086,26.09 0,115.258 -26.086,-26.082 0,-115.266 z" /&gt;&lt;path
+             id="path130"
+             style="fill:#036998;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             d="m 266.023,189.512 -176.3042,0 20.3982,27.801 175.93,0 -20.024,-27.801" /&gt;&lt;path
+             id="path132"
+             style="fill:none;stroke:#ffffff;stroke-width:3.99993992;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             d="m 266.023,189.512 -176.3042,0 20.3982,27.801 175.93,0 -20.024,-27.801 z" /&gt;&lt;path
+             id="path134"
+             style="fill:#036998;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             d="m 270.449,217.402 0,28.809 25.918,25.746 0,-28.637 -25.918,-25.918" /&gt;&lt;path
+             id="path136"
+             style="fill:none;stroke:#ffffff;stroke-width:3.99993992;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             d="m 270.449,217.402 0,28.809 25.918,25.746 0,-28.637 -25.918,-25.918 z" /&gt;&lt;path
+             id="path138"
+             style="fill:#036998;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             d="m 142.039,354.516 102.16,0 c 6.653,0 12.039,-5.391 12.039,-12.039 l 0,-64.543 c 0,-6.645 -5.386,-12.036 -12.039,-12.036 l -102.16,0 c -6.648,0 -12.039,5.391 -12.039,12.036 l 0,64.543 c 0,6.648 5.391,12.039 12.039,12.039" /&gt;&lt;path
+             id="path140"
+             style="fill:none;stroke:#ffffff;stroke-width:3.99993992;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             d="m 142.039,354.516 102.16,0 c 6.653,0 12.039,-5.391 12.039,-12.039 l 0,-64.543 c 0,-6.645 -5.386,-12.036 -12.039,-12.036 l -102.16,0 c -6.648,0 -12.039,5.391 -12.039,12.036 l 0,64.543 c 0,6.648 5.391,12.039 12.039,12.039 z" /&gt;&lt;path
+             id="path142"
+             style="fill:#036998;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             d="m 295.625,393.875 -148.691,0 -29.727,-26.082 152.332,0 26.086,26.082" /&gt;&lt;path
+             id="path144"
+             style="fill:none;stroke:#ffffff;stroke-width:3.99993992;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             d="m 295.625,393.875 -148.691,0 -29.727,-26.082 152.332,0 26.086,26.082 z" /&gt;&lt;path
+             id="path146"
+             style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             d="m 175.305,333.77 c -18.672,3.73 -28.535,-5.836 -26.977,-14.102 l 0.117,-0.453 c -14.55,-2.477 -10.73,-19.656 -3.75,-19.656 l 0.688,0.027 c -1.621,-11.848 15.879,-18.844 24.734,-12.184 l 0.613,0.668 c 2.778,-11.269 40.391,-12.144 47.993,-3.711 l 0.679,-0.199 c 16.489,-1.324 23.989,10.059 20.383,18.231 l 0.891,0.25 c 5.613,1.488 6.265,14.457 -3.379,16.379 l 0.191,0.5 c 4.184,8.433 -5.679,16.394 -19.383,14.898 l -0.949,0.492 c -9.801,8.879 -38.023,7.434 -41.289,-1.347 l -0.562,0.207" /&gt;&lt;path
+             id="path148"
+             style="fill:none;stroke:#036998;stroke-width:3.99993992;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             d="m 285.762,421.992 c -144.004,28.75 -220.0003,-45 -207.9964,-108.75 l 0.9649,-3.476 C -33.4844,290.668 -4.07422,158.242 49.7578,158.242 l 5.3008,0.164 C 41.5039,96.1914 172.637,32.8516 245.762,64.4922 l 4.699,5.1562 C 276.531,13.6719 369.16,4.32422 460.762,1.99219 540.145,-0.0390625 586.477,6.25 620.52,41.0352 l 5.242,-1.543 c 127.07,-10.2149 184.941,77.5588 157.16,140.5738 l 6.836,1.926 c 43.316,11.453 48.316,111.453 -25.996,126.25 l 1.426,3.871 c 32.261,65.055 -43.833,126.403 -149.426,114.879 l -7.317,3.817 c -75.586,68.445 -293.14,57.285 -318.34,-10.403 l -4.343,1.586 z" /&gt;&lt;path
+             id="path150"
+             style="fill:none;stroke:#036998;stroke-width:3.99993992;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             d="m 343.137,119.609 -95,63.34" /&gt;&lt;path
+             id="path152"
+             style="fill:none;stroke:#036998;stroke-width:3.99993992;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             d="m 496.453,134.609 60,40" /&gt;&lt;path
+             id="path154"
+             style="fill:none;stroke:#036998;stroke-width:3.99993992;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             d="m 284.797,329.609 283.34,0" /&gt;&lt;/g&gt;&lt;/g&gt;&lt;/g&gt;&lt;/g&gt;&lt;/svg&gt;</y:Resource>
+    </y:Resources>
+  </data>
+</graphml>
