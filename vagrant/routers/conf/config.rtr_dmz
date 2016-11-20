@@ -215,7 +215,21 @@
 	<snmpd>
 		<syslocation/>
 		<syscontact/>
-		<rocommunity>public</rocommunity>
+		<rocommunity>mcsoc</rocommunity>
+		<modules>
+			<mibii/>
+			<netgraph/>
+			<pf/>
+			<hostres/>
+			<ucd/>
+			<regex/>
+		</modules>
+		<pollport>161</pollport>
+		<trapserver/>
+		<trapserverport>162</trapserverport>
+		<trapstring/>
+		<bindip>opt3</bindip>
+		<enable/>
 	</snmpd>
 	<diag>
 		<ipv6nat>
@@ -369,7 +383,7 @@
 			<max-src-states/>
 			<statetimeout/>
 			<statetype>keep state</statetype>
-			<os></os>
+			<os/>
 			<protocol>icmp</protocol>
 			<source>
 				<any/>
@@ -554,8 +568,7 @@
 			<wan/>
 		</separator>
 	</filter>
-	<shaper>
-	</shaper>
+	<shaper/>
 	<ipsec/>
 	<aliases/>
 	<proxyarp/>
@@ -675,8 +688,7 @@
 		<sequence>system_information:col1:show,interfaces:col2:show</sequence>
 	</widgets>
 	<openvpn/>
-	<dnshaper>
-	</dnshaper>
+	<dnshaper/>
 	<unbound>
 		<enable/>
 		<dnssec/>
@@ -688,8 +700,8 @@
 		<dnssecstripped/>
 	</unbound>
 	<revision>
-		<time>1479665117</time>
-		<description><![CDATA[admin@10.0.2.2: /firewall_rules_edit.php made unknown change]]></description>
+		<time>1479674774</time>
+		<description><![CDATA[admin@10.0.2.2: /services_snmp.php made unknown change]]></description>
 		<username>admin@10.0.2.2</username>
 	</revision>
 	<cert>

@@ -230,7 +230,21 @@
 	<snmpd>
 		<syslocation/>
 		<syscontact/>
-		<rocommunity>public</rocommunity>
+		<rocommunity>mcsoc</rocommunity>
+		<modules>
+			<mibii/>
+			<netgraph/>
+			<pf/>
+			<hostres/>
+			<ucd/>
+			<regex/>
+		</modules>
+		<enable/>
+		<pollport>161</pollport>
+		<trapserver/>
+		<trapserverport>162</trapserverport>
+		<trapstring/>
+		<bindip>lan</bindip>
 	</snmpd>
 	<diag>
 		<ipv6nat>
@@ -248,6 +262,38 @@
 		</outbound>
 	</nat>
 	<filter>
+		<rule>
+			<id/>
+			<tracker>1479674509</tracker>
+			<type>pass</type>
+			<interface>lan</interface>
+			<ipprotocol>inet</ipprotocol>
+			<tag/>
+			<tagged/>
+			<max/>
+			<max-src-nodes/>
+			<max-src-conn/>
+			<max-src-states/>
+			<statetimeout/>
+			<statetype>keep state</statetype>
+			<os></os>
+			<protocol>tcp/udp</protocol>
+			<source>
+				<any/>
+			</source>
+			<destination>
+				<any/>
+			</destination>
+			<descr/>
+			<updated>
+				<time>1479674509</time>
+				<username>admin@10.0.2.2</username>
+			</updated>
+			<created>
+				<time>1479674509</time>
+				<username>admin@10.0.2.2</username>
+			</created>
+		</rule>
 		<rule>
 			<id/>
 			<tracker>1479661327</tracker>
@@ -343,7 +389,8 @@
 			<lan/>
 		</separator>
 	</filter>
-	<shaper/>
+	<shaper>
+	</shaper>
 	<ipsec/>
 	<aliases/>
 	<proxyarp/>
@@ -463,7 +510,8 @@
 		<sequence>system_information:col1:show,interfaces:col2:show</sequence>
 	</widgets>
 	<openvpn/>
-	<dnshaper/>
+	<dnshaper>
+	</dnshaper>
 	<unbound>
 		<enable/>
 		<dnssec/>
@@ -475,8 +523,8 @@
 		<dnssecstripped/>
 	</unbound>
 	<revision>
-		<time>1479662010</time>
-		<description><![CDATA[admin@10.0.2.2: /system_routes_edit.php made unknown change]]></description>
+		<time>1479674509</time>
+		<description><![CDATA[admin@10.0.2.2: /firewall_rules_edit.php made unknown change]]></description>
 		<username>admin@10.0.2.2</username>
 	</revision>
 	<cert>

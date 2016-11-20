@@ -176,7 +176,21 @@
 	<snmpd>
 		<syslocation/>
 		<syscontact/>
-		<rocommunity>public</rocommunity>
+		<rocommunity>mcsoc</rocommunity>
+		<modules>
+			<mibii/>
+			<netgraph/>
+			<pf/>
+			<hostres/>
+			<ucd/>
+			<regex/>
+		</modules>
+		<enable/>
+		<pollport>161</pollport>
+		<trapserver/>
+		<trapserverport>162</trapserverport>
+		<trapstring/>
+		<bindip>wan</bindip>
 	</snmpd>
 	<diag>
 		<ipv6nat>
@@ -583,8 +597,8 @@
 		<dnssecstripped/>
 	</unbound>
 	<revision>
-		<time>1479664888</time>
-		<description><![CDATA[admin@10.0.2.2: /system_gateways_edit.php made unknown change]]></description>
+		<time>1479674993</time>
+		<description><![CDATA[admin@10.0.2.2: /services_snmp.php made unknown change]]></description>
 		<username>admin@10.0.2.2</username>
 	</revision>
 	<cert>

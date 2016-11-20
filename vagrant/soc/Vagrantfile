@@ -17,12 +17,12 @@ Vagrant.configure("2") do |config|
     #nagios.ssh.username = 'vagrant'
     #nagios.ssh.password = 'vagrant'
     nagios.vm.network "private_network", ip: "10.10.4.3", virtualbox__intnet: true
-    nagios.vm.network "forwarded_port", guest: 80, host:19033 
+    nagios.vm.network "forwarded_port", guest: 80, host:5080 
 
     nagios.vm.provision "docker" do |d|
-      d.run "jasonrivers/nagios",
-        image: "jasonrivers/nagios:latest",
-        args: "-d -p '80:80'"
+      d.run "nlmacamp/check_mk",
+        image: "nlmacamp/check_mk",
+        args: "-d -p '80:5000'"
     end
   end
 
