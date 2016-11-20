@@ -65,17 +65,19 @@
 			<alias-address/>
 			<alias-subnet>32</alias-subnet>
 			<enable/>
-			<ipaddr>10.10.1.1</ipaddr>
-			<subnet>32</subnet>
 			<spoofmac/>
+			<ipaddr>10.10.5.1</ipaddr>
+			<subnet>24</subnet>
+			<gateway>WANGW</gateway>
 		</wan>
 		<lan>
 			<enable/>
 			<if>em2</if>
 			<descr><![CDATA[ENT]]></descr>
 			<spoofmac/>
-			<ipaddr>10.10.2.1</ipaddr>
+			<ipaddr>10.10.6.1</ipaddr>
 			<subnet>24</subnet>
+			<gateway>ENTGW</gateway>
 		</lan>
 		<opt1>
 			<descr><![CDATA[OPT1]]></descr>
@@ -106,12 +108,44 @@
 			<descr><![CDATA[DEV]]></descr>
 			<if>em3</if>
 			<enable/>
-			<ipaddr>10.10.7.1</ipaddr>
-			<subnet>32</subnet>
 			<spoofmac/>
+			<ipaddr>10.10.7.1</ipaddr>
+			<subnet>24</subnet>
+			<gateway>DEVGW</gateway>
 		</opt2>
 	</interfaces>
-	<staticroutes/>
+	<staticroutes>
+		<route>
+			<network>10.10.8.0/24</network>
+			<gateway>ENTGW</gateway>
+			<descr><![CDATA[Enterprise Servers]]></descr>
+		</route>
+		<route>
+			<network>10.10.9.0/24</network>
+			<gateway>ENTGW</gateway>
+			<descr><![CDATA[Enterprise Workstations]]></descr>
+		</route>
+		<route>
+			<network>10.10.10.0/24</network>
+			<gateway>DEVGW</gateway>
+			<descr><![CDATA[Development Servers]]></descr>
+		</route>
+		<route>
+			<network>10.10.11.0/24</network>
+			<gateway>DEVGW</gateway>
+			<descr><![CDATA[Development Workstations]]></descr>
+		</route>
+		<route>
+			<network>10.10.3.0/24</network>
+			<gateway>WANGW</gateway>
+			<descr><![CDATA[DMZ Servers]]></descr>
+		</route>
+		<route>
+			<network>10.10.4.0/24</network>
+			<gateway>WANGW</gateway>
+			<descr><![CDATA[SOC Servers]]></descr>
+		</route>
+	</staticroutes>
 	<dhcpd>
 		<lan>
 			<range>
@@ -195,7 +229,7 @@
 	<filter>
 		<rule>
 			<id/>
-			<tracker>1479580170</tracker>
+			<tracker>1479663144</tracker>
 			<type>pass</type>
 			<interface>wan</interface>
 			<ipprotocol>inet</ipprotocol>
@@ -208,7 +242,7 @@
 			<statetimeout/>
 			<statetype>keep state</statetype>
 			<os/>
-			<protocol>tcp</protocol>
+			<protocol>tcp/udp</protocol>
 			<source>
 				<any/>
 			</source>
@@ -217,11 +251,75 @@
 			</destination>
 			<descr/>
 			<updated>
-				<time>1479580170</time>
+				<time>1479663144</time>
 				<username>admin@10.0.2.2</username>
 			</updated>
 			<created>
-				<time>1479580170</time>
+				<time>1479663144</time>
+				<username>admin@10.0.2.2</username>
+			</created>
+		</rule>
+		<rule>
+			<id/>
+			<tracker>1479663166</tracker>
+			<type>pass</type>
+			<interface>wan</interface>
+			<ipprotocol>inet</ipprotocol>
+			<tag/>
+			<tagged/>
+			<max/>
+			<max-src-nodes/>
+			<max-src-conn/>
+			<max-src-states/>
+			<statetimeout/>
+			<statetype>keep state</statetype>
+			<os/>
+			<protocol>icmp</protocol>
+			<source>
+				<any/>
+			</source>
+			<destination>
+				<any/>
+			</destination>
+			<descr/>
+			<updated>
+				<time>1479663166</time>
+				<username>admin@10.0.2.2</username>
+			</updated>
+			<created>
+				<time>1479663166</time>
+				<username>admin@10.0.2.2</username>
+			</created>
+		</rule>
+		<rule>
+			<id/>
+			<tracker>1479663624</tracker>
+			<type>pass</type>
+			<interface>lan</interface>
+			<ipprotocol>inet</ipprotocol>
+			<tag/>
+			<tagged/>
+			<max/>
+			<max-src-nodes/>
+			<max-src-conn/>
+			<max-src-states/>
+			<statetimeout/>
+			<statetype>keep state</statetype>
+			<os/>
+			<protocol>tcp/udp</protocol>
+			<source>
+				<any/>
+			</source>
+			<destination>
+				<any/>
+			</destination>
+			<descr/>
+			<updated>
+				<time>1479663624</time>
+				<username>admin@10.0.2.2</username>
+			</updated>
+			<created>
+				<time>1479663624</time>
 				<username>admin@10.0.2.2</username>
 			</created>
 		</rule>
@@ -250,6 +348,38 @@
 			<destination>
 				<any/>
 			</destination>
+		</rule>
+		<rule>
+			<id/>
+			<tracker>1479663633</tracker>
+			<type>pass</type>
+			<interface>lan</interface>
+			<ipprotocol>inet</ipprotocol>
+			<tag/>
+			<tagged/>
+			<max/>
+			<max-src-nodes/>
+			<max-src-conn/>
+			<max-src-states/>
+			<statetimeout/>
+			<statetype>keep state</statetype>
+			<os/>
+			<protocol>icmp</protocol>
+			<source>
+				<any/>
+			</source>
+			<destination>
+				<any/>
+			</destination>
+			<descr/>
+			<updated>
+				<time>1479663633</time>
+				<username>admin@10.0.2.2</username>
+			</updated>
+			<created>
+				<time>1479663633</time>
+				<username>admin@10.0.2.2</username>
+			</created>
 		</rule>
 		<rule>
 			<id/>
@@ -285,7 +415,7 @@
 		</rule>
 		<rule>
 			<id/>
-			<tracker>1479580260</tracker>
+			<tracker>1479663200</tracker>
 			<type>pass</type>
 			<interface>opt2</interface>
 			<ipprotocol>inet</ipprotocol>
@@ -298,7 +428,7 @@
 			<statetimeout/>
 			<statetype>keep state</statetype>
 			<os/>
-			<protocol>tcp</protocol>
+			<protocol>tcp/udp</protocol>
 			<source>
 				<any/>
 			</source>
@@ -307,11 +437,43 @@
 			</destination>
 			<descr/>
 			<updated>
-				<time>1479580260</time>
+				<time>1479663200</time>
 				<username>admin@10.0.2.2</username>
 			</updated>
 			<created>
-				<time>1479580260</time>
+				<time>1479663200</time>
+				<username>admin@10.0.2.2</username>
+			</created>
+		</rule>
+		<rule>
+			<id/>
+			<tracker>1479663211</tracker>
+			<type>pass</type>
+			<interface>opt2</interface>
+			<ipprotocol>inet</ipprotocol>
+			<tag/>
+			<tagged/>
+			<max/>
+			<max-src-nodes/>
+			<max-src-conn/>
+			<max-src-states/>
+			<statetimeout/>
+			<statetype>keep state</statetype>
+			<os/>
+			<protocol>icmp</protocol>
+			<source>
+				<any/>
+			</source>
+			<destination>
+				<any/>
+			</destination>
+			<descr/>
+			<updated>
+				<time>1479663211</time>
+				<username>admin@10.0.2.2</username>
+			</updated>
+			<created>
+				<time>1479663211</time>
 				<username>admin@10.0.2.2</username>
 			</created>
 		</rule>
@@ -319,6 +481,7 @@
 			<opt1/>
 			<wan/>
 			<opt2/>
+			<lan/>
 		</separator>
 	</filter>
 	<shaper/>
@@ -453,7 +616,7 @@
 		<dnssecstripped/>
 	</unbound>
 	<revision>
-		<time>1479580416</time>
+		<time>1479663850</time>
 		<description><![CDATA[admin@10.0.2.2: /interfaces.php made unknown change]]></description>
 		<username>admin@10.0.2.2</username>
 	</revision>
@@ -467,5 +630,30 @@
 	<ppps>
 	</ppps>
 	<gateways>
+		<gateway_item>
+			<interface>lan</interface>
+			<gateway>10.10.6.2</gateway>
+			<name>ENTGW</name>
+			<weight/>
+			<ipprotocol>inet</ipprotocol>
+			<descr><![CDATA[Enterprise]]></descr>
+		</gateway_item>
+		<gateway_item>
+			<interface>opt2</interface>
+			<gateway>10.10.7.2</gateway>
+			<name>DEVGW</name>
+			<weight/>
+			<ipprotocol>inet</ipprotocol>
+			<descr><![CDATA[Development]]></descr>
+		</gateway_item>
+		<gateway_item>
+			<interface>wan</interface>
+			<gateway>10.10.5.2</gateway>
+			<name>WANGW</name>
+			<weight>1</weight>
+			<ipprotocol>inet</ipprotocol>
+			<descr><![CDATA[Default Outbound]]></descr>
+			<defaultgw/>
+		</gateway_item>
 	</gateways>
 </pfsense>

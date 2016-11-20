@@ -4,7 +4,7 @@
 	<lastchange/>
 	<system>
 		<optimization>normal</optimization>
-		<hostname>rtr-ent</hostname>
+		<hostname>rtr-ext</hostname>
 		<domain>example.net</domain>
 		<group>
 			<name>all</name>
@@ -61,22 +61,38 @@
 	<interfaces>
 		<wan>
 			<if>em1</if>
+			<blockpriv>on</blockpriv>
+			<blockbogons>on</blockbogons>
 			<descr><![CDATA[WAN]]></descr>
 			<alias-address/>
 			<alias-subnet>32</alias-subnet>
 			<enable/>
-			<spoofmac/>
-			<ipaddr>10.10.6.2</ipaddr>
-			<subnet>24</subnet>
-			<gateway>WANGW</gateway>
+			<ipaddr>10.10.1.1</ipaddr>
+			<dhcprejectfrom/>
+			<adv_dhcp_pt_timeout/>
+			<adv_dhcp_pt_retry/>
+			<adv_dhcp_pt_select_timeout/>
+			<adv_dhcp_pt_reboot/>
+			<adv_dhcp_pt_backoff_cutoff/>
+			<adv_dhcp_pt_initial_interval/>
+			<adv_dhcp_pt_values>SavedCfg</adv_dhcp_pt_values>
+			<adv_dhcp_send_options/>
+			<adv_dhcp_request_options/>
+			<adv_dhcp_required_options/>
+			<adv_dhcp_option_modifiers/>
+			<adv_dhcp_config_advanced/>
+			<adv_dhcp_config_file_override/>
+			<adv_dhcp_config_file_override_path/>
+			<subnet>32</subnet>
 		</wan>
 		<lan>
 			<enable/>
 			<if>em2</if>
-			<descr><![CDATA[ENTSVR]]></descr>
+			<descr><![CDATA[LAN]]></descr>
 			<spoofmac/>
-			<ipaddr>10.10.8.1</ipaddr>
+			<ipaddr>10.10.2.1</ipaddr>
 			<subnet>24</subnet>
+			<gateway>LANGW</gateway>
 		</lan>
 		<opt1>
 			<descr><![CDATA[OPT1]]></descr>
@@ -103,16 +119,54 @@
 			<adv_dhcp_config_file_override/>
 			<adv_dhcp_config_file_override_path/>
 		</opt1>
-		<opt2>
-			<descr><![CDATA[ENTWKS]]></descr>
-			<if>em3</if>
-			<enable/>
-			<spoofmac/>
-			<ipaddr>10.10.9.1</ipaddr>
-			<subnet>32</subnet>
-		</opt2>
 	</interfaces>
-	<staticroutes/>
+	<staticroutes>
+		<route>
+			<network>10.10.3.0/24</network>
+			<gateway>LANGW</gateway>
+			<descr/>
+		</route>
+		<route>
+			<network>10.10.4.0/24</network>
+			<gateway>LANGW</gateway>
+			<descr/>
+		</route>
+		<route>
+			<network>10.10.5.0/24</network>
+			<gateway>LANGW</gateway>
+			<descr/>
+		</route>
+		<route>
+			<network>10.10.6.0/24</network>
+			<gateway>LANGW</gateway>
+			<descr/>
+		</route>
+		<route>
+			<network>10.10.7.0/24</network>
+			<gateway>LANGW</gateway>
+			<descr/>
+		</route>
+		<route>
+			<network>10.10.8.0/24</network>
+			<gateway>LANGW</gateway>
+			<descr/>
+		</route>
+		<route>
+			<network>10.10.9.0/24</network>
+			<gateway>LANGW</gateway>
+			<descr/>
+		</route>
+		<route>
+			<network>10.10.10.0/24</network>
+			<gateway>LANGW</gateway>
+			<descr/>
+		</route>
+		<route>
+			<network>10.10.11.0/24</network>
+			<gateway>LANGW</gateway>
+			<descr/>
+		</route>
+	</staticroutes>
 	<dhcpd>
 		<lan>
 			<range>
@@ -196,41 +250,9 @@
 	<filter>
 		<rule>
 			<id/>
-			<tracker>1479663268</tracker>
+			<tracker>1479661327</tracker>
 			<type>pass</type>
-			<interface>wan</interface>
-			<ipprotocol>inet</ipprotocol>
-			<tag/>
-			<tagged/>
-			<max/>
-			<max-src-nodes/>
-			<max-src-conn/>
-			<max-src-states/>
-			<statetimeout/>
-			<statetype>keep state</statetype>
-			<os/>
-			<protocol>tcp/udp</protocol>
-			<source>
-				<any/>
-			</source>
-			<destination>
-				<any/>
-			</destination>
-			<descr/>
-			<updated>
-				<time>1479663268</time>
-				<username>admin@10.0.2.2</username>
-			</updated>
-			<created>
-				<time>1479663268</time>
-				<username>admin@10.0.2.2</username>
-			</created>
-		</rule>
-		<rule>
-			<id/>
-			<tracker>1479663281</tracker>
-			<type>pass</type>
-			<interface>wan</interface>
+			<interface>lan</interface>
 			<ipprotocol>inet</ipprotocol>
 			<tag/>
 			<tagged/>
@@ -250,43 +272,11 @@
 			</destination>
 			<descr/>
 			<updated>
-				<time>1479663281</time>
+				<time>1479661327</time>
 				<username>admin@10.0.2.2</username>
 			</updated>
 			<created>
-				<time>1479663281</time>
-				<username>admin@10.0.2.2</username>
-			</created>
-		</rule>
-		<rule>
-			<id/>
-			<tracker>1479664859</tracker>
-			<type>pass</type>
-			<interface>lan</interface>
-			<ipprotocol>inet</ipprotocol>
-			<tag/>
-			<tagged/>
-			<max/>
-			<max-src-nodes/>
-			<max-src-conn/>
-			<max-src-states/>
-			<statetimeout/>
-			<statetype>keep state</statetype>
-			<os/>
-			<protocol>tcp/udp</protocol>
-			<source>
-				<any/>
-			</source>
-			<destination>
-				<any/>
-			</destination>
-			<descr/>
-			<updated>
-				<time>1479664859</time>
-				<username>admin@10.0.2.2</username>
-			</updated>
-			<created>
-				<time>1479664859</time>
+				<time>1479661327</time>
 				<username>admin@10.0.2.2</username>
 			</created>
 		</rule>
@@ -315,38 +305,6 @@
 			<destination>
 				<any/>
 			</destination>
-		</rule>
-		<rule>
-			<id/>
-			<tracker>1479664866</tracker>
-			<type>pass</type>
-			<interface>lan</interface>
-			<ipprotocol>inet</ipprotocol>
-			<tag/>
-			<tagged/>
-			<max/>
-			<max-src-nodes/>
-			<max-src-conn/>
-			<max-src-states/>
-			<statetimeout/>
-			<statetype>keep state</statetype>
-			<os/>
-			<protocol>icmp</protocol>
-			<source>
-				<any/>
-			</source>
-			<destination>
-				<any/>
-			</destination>
-			<descr/>
-			<updated>
-				<time>1479664866</time>
-				<username>admin@10.0.2.2</username>
-			</updated>
-			<created>
-				<time>1479664866</time>
-				<username>admin@10.0.2.2</username>
-			</created>
 		</rule>
 		<rule>
 			<id/>
@@ -380,74 +338,8 @@
 				<username>admin@10.10.2.111</username>
 			</created>
 		</rule>
-		<rule>
-			<id/>
-			<tracker>1479663297</tracker>
-			<type>pass</type>
-			<interface>opt2</interface>
-			<ipprotocol>inet</ipprotocol>
-			<tag/>
-			<tagged/>
-			<max/>
-			<max-src-nodes/>
-			<max-src-conn/>
-			<max-src-states/>
-			<statetimeout/>
-			<statetype>keep state</statetype>
-			<os/>
-			<protocol>tcp/udp</protocol>
-			<source>
-				<any/>
-			</source>
-			<destination>
-				<any/>
-			</destination>
-			<descr/>
-			<updated>
-				<time>1479663297</time>
-				<username>admin@10.0.2.2</username>
-			</updated>
-			<created>
-				<time>1479663297</time>
-				<username>admin@10.0.2.2</username>
-			</created>
-		</rule>
-		<rule>
-			<id/>
-			<tracker>1479663308</tracker>
-			<type>pass</type>
-			<interface>opt2</interface>
-			<ipprotocol>inet</ipprotocol>
-			<tag/>
-			<tagged/>
-			<max/>
-			<max-src-nodes/>
-			<max-src-conn/>
-			<max-src-states/>
-			<statetimeout/>
-			<statetype>keep state</statetype>
-			<os/>
-			<protocol>icmp</protocol>
-			<source>
-				<any/>
-			</source>
-			<destination>
-				<any/>
-			</destination>
-			<descr/>
-			<updated>
-				<time>1479663308</time>
-				<username>admin@10.0.2.2</username>
-			</updated>
-			<created>
-				<time>1479663308</time>
-				<username>admin@10.0.2.2</username>
-			</created>
-		</rule>
 		<separator>
 			<opt1/>
-			<wan/>
-			<opt2/>
 			<lan/>
 		</separator>
 	</filter>
@@ -583,8 +475,8 @@
 		<dnssecstripped/>
 	</unbound>
 	<revision>
-		<time>1479664888</time>
-		<description><![CDATA[admin@10.0.2.2: /system_gateways_edit.php made unknown change]]></description>
+		<time>1479662010</time>
+		<description><![CDATA[admin@10.0.2.2: /system_routes_edit.php made unknown change]]></description>
 		<username>admin@10.0.2.2</username>
 	</revision>
 	<cert>
@@ -597,13 +489,12 @@
 	<ppps/>
 	<gateways>
 		<gateway_item>
-			<interface>wan</interface>
-			<gateway>10.10.6.1</gateway>
-			<name>WANGW</name>
-			<weight>1</weight>
+			<interface>lan</interface>
+			<gateway>10.10.2.2</gateway>
+			<name>LANGW</name>
+			<weight/>
 			<ipprotocol>inet</ipprotocol>
-			<descr><![CDATA[Default Outbound]]></descr>
-			<defaultgw/>
+			<descr><![CDATA[Inbound]]></descr>
 		</gateway_item>
 	</gateways>
 </pfsense>

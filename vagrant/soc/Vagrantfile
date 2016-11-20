@@ -1,0 +1,36 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+# All Vagrant configuration is done below. The "2" in Vagrant.configure
+# configures the configuration version (we support older styles for
+# backwards compatibility). Please don't change it unless you know what
+# you're doing.
+Vagrant.configure("2") do |config|
+
+  # Nagios Server
+  # vi /etc/nagios.cfg
+  # enable switch.cfg
+  config.vm.define "nagios" do |nagios|
+    nagios.vm.box = "ubuntu/xenial64"
+    nagios.vm.hostname = "nagios"
+    #nagios.ssh.shell = 'sh'
+    #nagios.ssh.username = 'vagrant'
+    #nagios.ssh.password = 'vagrant'
+    nagios.vm.network "private_network", ip: "10.10.4.3", virtualbox__intnet: true
+    nagios.vm.network "forwarded_port", guest: 80, host:19033 
+
+    nagios.vm.provision "docker" do |d|
+      d.run "jasonrivers/nagios",
+        image: "jasonrivers/nagios:latest",
+        args: "-d -p '80:80'"
+    end
+  end
+
+  # SOC Workstation
+  config.vm.define "socws101" do |socws101|
+    socws101.vm.box = "boxcutter/centos72-desktop"
+    socws101.vm.hostname = "socws101"
+    socws101.vm.network "private_network", ip: "10.10.4.101", virtualbox__intnet: true
+    # yum -y install firefox
+  end
+end
