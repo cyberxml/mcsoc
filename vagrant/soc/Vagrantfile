@@ -12,7 +12,7 @@ Vagrant.configure("2") do |config|
   # enable switch.cfg
   config.vm.define "nagios" do |nagios|
     nagios.vm.box = "ubuntu/xenial64"
-    nagios.vm.hostname = "nagios"
+    nagios.vm.hostname = "nagios.example.net"
     #nagios.ssh.shell = 'sh'
     #nagios.ssh.username = 'vagrant'
     #nagios.ssh.password = 'vagrant'
@@ -30,7 +30,14 @@ Vagrant.configure("2") do |config|
   config.vm.define "socws101" do |socws101|
     socws101.vm.box = "boxcutter/centos72-desktop"
     socws101.vm.hostname = "socws101"
-    socws101.vm.network "private_network", ip: "10.10.4.101", virtualbox__intnet: true
+    socws101.vm.network "private_network", ip: "10.10.4.101", nameserver1: "10.10.8.11", gateway: "10.10.4.2", virtualbox__intnet: true
+    # yum -y install firefox
+  end
+  # SOC Workstation
+  config.vm.define "socws102" do |socws102|
+    socws102.vm.box = "boxcutter/centos72-desktop"
+    socws102.vm.hostname = "socws102"
+    socws102.vm.network "private_network", ip: "10.10.4.102", nameserver1: "10.10.8.11", gateway: "10.10.4.2", virtualbox__intnet: true
     # yum -y install firefox
   end
 end

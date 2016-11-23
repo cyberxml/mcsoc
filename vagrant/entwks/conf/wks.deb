@@ -1,0 +1,6 @@
+samba
+krb5-user
+winbind
+libpam
+libkrb5
+

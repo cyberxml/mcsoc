@@ -1,0 +1,1 @@
+net rpc join -U administrator member -S DC1.ENT.EXAMPLE.NET

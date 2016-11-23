@@ -1,0 +1,21 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+# All Vagrant configuration is done below. The "2" in Vagrant.configure
+# configures the configuration version (we support older styles for
+# backwards compatibility). Please don't change it unless you know what
+# you're doing.
+Vagrant.configure("2") do |config|
+
+  # Nagios Server
+  # vi /etc/nagios.cfg
+  # enable switch.cfg
+  config.vm.define "dc1" do |dc1|
+    dc1.vm.box = "cyberxml/turnkey-dc"
+    dc1.vm.hostname = "dc1"
+    dc1.ssh.username = "vagrant"
+    dc1.ssh.password = "vagrant"
+    dc1.vm.network "private_network", ip: "10.10.8.11", gateway: "10.10.8.2", nameserver1: "10.10.8.2", virtualbox__intnet: true
+    dc1.vm.network "forwarded_port", guest: 12321, host:12321
+  end
+end

@@ -1,0 +1,25 @@
+# http://2stech.ca/index.php/linux/linuxtutotials/tutorials/234-samba-active-directory-with-bind-dns-backend-on-ubuntu-1404
+
+apt-get install -y samba smbclient bind9 build-essential libacl1-dev libattr1-dev libblkid-dev libreadline-dev python-dev libpam0g-dev python-dnspython gdb pkg-config libpopt-dev libldap2-dev dnsutils libbsd-dev attr krb5-user docbook-xsl libcups2-dev acl python-xattr  libssl-dev libssl-doc winbind
+
+samba-tool domain provision --host-name=dc1 --realm=ENT.EXAMPLE.NET --domain=ENT --server-role='dc' --adminpass=Vagrant\!234 --dns-backend=BIND9_DLZ --function-level=2008_R2 --use-rfc2307 --option="interfaces=eth1 lo" --option="bind interfaces only=yes"
+
+# disable password expiry and complexity
+#samba-tool domain passwordsettings set --complexity=off --min-pwd-length=6 --max-pwd-age=0
+
+# edit: /etc/bind/named.conf.options
+# tkey-gssapi-keytab "/var/lib/samba/private/dns.keytab";
+
+chgrp bind /var/lib/samba/private/dns.keytab
+chmod g+r /var/lib/samba/private/dns.keytab
+
+# edit:  /etc/apparmor.d/usr.sbin.named.
+# #include "local/usr.sbin.named"
+# /var/lib/samba/private/named.conf r,
+# /var/lib/samba/private/dns.keytab r,
+# /usr/lib/x86_64-linux-gnu/samba/** m,
+# /var/lib/samba/private/krb5.conf r,
+# /usr/lib/x86_64-linux-gnu/ldb/modules/ldb/** m,
+# /var/lib/samba/private/dns/** rwk,
+
+samba-tool dns update DC1 ent.example.net DC1 A 10.0.2.15 10.10.8.11 -UAdministrator

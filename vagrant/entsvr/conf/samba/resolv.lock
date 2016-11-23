@@ -1,0 +1,6 @@
+rm /etc/resolv.conf
+echo nameserver 10.10.8.11 > /etc/resolv.conf
+echo nameserver 127.0.0.1  >> /etc/resolv.conf
+echo search ent.example.net >> /etc/resolv.conf
+chattr +i /etc/resolv.conf
+

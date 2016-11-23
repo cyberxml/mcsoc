@@ -1,0 +1,12 @@
+
+smbclient -L localhost -U%
+
+smbclient //localhost/netlogon -UAdministrator -c 'ls'
+
+wbinfo -u
+
+wbinfo -g
+
+wbinfo -i entguest2
+
+

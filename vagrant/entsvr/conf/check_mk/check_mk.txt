@@ -1,0 +1,11 @@
+
+For RPM this is done using:
+
+root@linux# rpm -i check_mk-agent-1.1.18-1.noarch.rpm
+root@linux# rpm -i check_mk-agent-logwatch-1.1.18-1.noarch.rpm
+
+For DEB type distros:
+
+root@linux# dpkg -i check-mk-agent_1.1.18-2_all.deb
+root@linux# dpkg -i check-mk-agent-logwatch_1.1.18-2_all.deb
+
