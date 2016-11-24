@@ -1,0 +1,16 @@
+# These values can be overridden by editing ~/.spamassassin/user_prefs.cf 
+# (see spamassassin(1) for details)
+
+# These should be safe assumptions and allow for simple visual sifting
+# without risking lost emails.
+
+required_hits 5
+report_safe 0
+rewrite_header Subject [SPAM]
+
+
+# https://sourceforge.net/p/pyzor/mailman/message/32786667/
+ifplugin Mail::SpamAssassin::Plugin::Pyzor
+pyzor_path /bin/pyzor
+pyzor_options --homedir /etc/mail/spamassassin/.pyzor
+endif
