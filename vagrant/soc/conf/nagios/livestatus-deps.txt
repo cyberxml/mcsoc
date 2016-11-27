@@ -1,0 +1,11 @@
+apt install time
+apt install traceroute
+apt install dialog
+apt install dnsutils
+apt install graphviz
+apt install libapache2-mod-fcgid
+apt install libapache2-mod-proxy-html
+apt install libdbi0
+apt install libevent
+apt install libgd2-xpm
+

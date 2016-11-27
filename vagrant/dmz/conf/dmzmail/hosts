@@ -1,0 +1,5 @@
+10.10.3.4 dmzmail.example.net dmzmail
+10.10.8.13 mail.example.net example.net
+127.0.0.1	dmzmail	dmzmail
+127.0.0.1   localhost localhost.localdomain localhost4 localhost4.localdomain4
+::1         localhost localhost.localdomain localhost6 localhost6.localdomain6

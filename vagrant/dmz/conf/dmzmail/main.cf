@@ -101,7 +101,7 @@ mydomain = example.net
 # to recipient addresses that have no @domain part.
 #
 #myorigin = $myhostname
-#myorigin = $mydomain
+myorigin = $mydomain
 
 # RECEIVING MAIL
 
@@ -142,6 +142,7 @@ inet_protocols = all
 # local_transport parameter setting. By default, that is the UNIX
 # compatible delivery agent that lookups all recipients in /etc/passwd
 # and /etc/aliases or their equivalent.
+
 #
 # The default is $myhostname + localhost.$mydomain.  On a mail domain
 # gateway, you should also include $mydomain.
@@ -166,7 +167,8 @@ inet_protocols = all
 #
 # See also below, section "REJECTING MAIL FOR UNKNOWN LOCAL USERS".
 #
-mydestination = $myhostname, localhost.$mydomain, localhost
+mydestination = 
+#mydestination = $myhostname, localhost.$mydomain, localhost
 #mydestination = $myhostname, localhost.$mydomain, localhost, $mydomain
 #mydestination = $myhostname, localhost.$mydomain, localhost, $mydomain,
 #	mail.$mydomain, www.$mydomain, ftp.$mydomain
@@ -212,7 +214,12 @@ mydestination = $myhostname, localhost.$mydomain, localhost
 # 
 #local_recipient_maps = unix:passwd.byname $alias_maps
 #local_recipient_maps = proxy:unix:passwd.byname $alias_maps
-#local_recipient_maps =
+local_recipient_maps =
+local_transport = error:local mail delivery is disabled
+transport_maps = hash:/etc/postfix/transport
+#smtpd_recipient_restrictions = permit_mynetworks
+#    reject_unauth_destination
+smtpd_recipient_restrictions = permit_mynetworks, permit
 
 # The unknown_local_recipient_reject_code specifies the SMTP server
 # response code when a recipient domain matches $mydestination or
@@ -266,7 +273,7 @@ unknown_local_recipient_reject_code = 550
 # of listing the patterns here. Specify type:table for table-based lookups
 # (the value on the table right-hand side is not used).
 #
-mynetworks = 10.10.0.0/24, 127.0.0.0/8
+mynetworks = 127.0.0.0/8, 10.10.0.0/16
 #mynetworks = 168.100.189.0/28, 127.0.0.0/8
 #mynetworks = $config_directory/mynetworks
 #mynetworks = hash:/etc/postfix/network_table
@@ -299,7 +306,7 @@ mynetworks = 10.10.0.0/24, 127.0.0.0/8
 # list this system as their primary or backup MX host. See the
 # permit_mx_backup restriction description in postconf(5).
 #
-#relay_domains = $mydestination
+relay_domains = $mydestination, $transport_maps
 
 # INTERNET OR INTRANET
 
@@ -321,6 +328,8 @@ mynetworks = 10.10.0.0/24, 127.0.0.0/8
 #relayhost = [mailserver.isp.tld]
 #relayhost = uucphost
 #relayhost = [an.ip.add.ress]
+relayhost = 
+
 
 # REJECTING UNKNOWN RELAY USERS
 #

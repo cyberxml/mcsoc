@@ -1,0 +1,16 @@
+$TTL 86400
+@   IN  SOA     ad1.example.net. root.example.net. (
+        2011071001  ;Serial
+        3600        ;Refresh
+        1800        ;Retry
+        604800      ;Expire
+        86400       ;Minimum TTL
+)
+@       IN  NS          dc1.example.net.
+@       IN  NS          dc2.example.net.
+@       IN  A           10.10.8.11
+@       IN  A           10.10.8.12
+dc1	IN  A   10.10.8.11
+dc2     IN  A   10.10.8.12
+mail    IN  A   10.10.8.13
+entws101          IN  A   10.10.9.101

@@ -1,0 +1,1 @@
+V	270304201545Z		1000	unknown	/C=US/ST=AA/L=New Soc City/O=McSOC/OU=Enterprise Servers/CN=dc1.example.net/emailAddress=root@example.net

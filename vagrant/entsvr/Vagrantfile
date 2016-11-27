@@ -7,15 +7,23 @@
 # you're doing.
 Vagrant.configure("2") do |config|
 
-  # Nagios Server
-  # vi /etc/nagios.cfg
-  # enable switch.cfg
+  # Samba4 Active Directory
   config.vm.define "dc1" do |dc1|
-    dc1.vm.box = "cyberxml/turnkey-dc"
+    dc1.vm.box = "centos/7"
     dc1.vm.hostname = "dc1"
-    dc1.ssh.username = "vagrant"
-    dc1.ssh.password = "vagrant"
-    dc1.vm.network "private_network", ip: "10.10.8.11", gateway: "10.10.8.2", nameserver1: "10.10.8.2", virtualbox__intnet: true
-    dc1.vm.network "forwarded_port", guest: 12321, host:12321
+    dc1.vm.network "private_network", ip: "10.10.8.11", gateway: "10.10.8.1", virtualbox__intnet: true
+    dc1.vm.synced_folder ".", "/vagrant", type: "virtualbox"
+  end
+
+  # Postfix/Dovecot
+  config.vm.define "mail" do |mail|
+    mail.vm.box = "centos/7"
+    mail.vm.hostname = "mail"
+    mail.vm.network "private_network", ip: "10.10.8.13", gateway: "10.10.8.1", virtualbox__intnet: true
+    mail.vm.network "forwarded_port", guest: 80, host:12380
+    mail.vm.network "forwarded_port", guest: 443, host:12381
+    mail.vm.network "forwarded_port", guest: 389, host:13389
+    mail.vm.network "forwarded_port", guest: 636, host:13636
+    mail.vm.synced_folder ".", "/vagrant", type: "virtualbox"
   end
 end

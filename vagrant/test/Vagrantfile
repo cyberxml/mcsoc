@@ -1,0 +1,18 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+# All Vagrant configuration is done below. The "2" in Vagrant.configure
+# configures the configuration version (we support older styles for
+# backwards compatibility). Please don't change it unless you know what
+# you're doing.
+Vagrant.configure("2") do |config|
+
+  config.vm.define "testmail" do |testmail|
+    testmail.vm.box = "centos/7"
+    testmail.vm.hostname = "testmail"
+    testmail.vm.network "private_network", ip: "10.10.1.113", gateway: "10.10.1.1", virtualbox__intnet: true
+    testmail.vm.network "forwarded_port", guest: 31080, host:31080
+    testmail.vm.network "forwarded_port", guest: 31443, host:31443
+    testmail.vm.synced_folder ".", "/vagrant", type: "virtualbox"
+  end
+end
