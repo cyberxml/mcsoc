@@ -1,0 +1,23 @@
+# create new
+
+[Unit]
+Description=c-icap service
+After=network.target
+
+[Service]
+Type=forking
+#User=squid
+#Group=squid
+#RuntimeDirectory=c-icap
+#RuntimeDirectoryMode=0777
+ExecStartPre=/usr/bin/mkdir -p /var/run/c-icap
+ExecStartPre=/usr/bin/chown squid:squid /var/run/c-icap
+ExecStartPre=/usr/bin/chmod 0755 /var/run/c-icap
+PIDFile=/var/run/c-icap/c-icap.pid
+#PIDFile=/var/run/c-icap.pid
+ExecStart=/usr/local/bin/c-icap -f /usr/local/etc/c-icap.conf
+KillMode=process
+
+[Install]
+WantedBy=multi-user.target
+

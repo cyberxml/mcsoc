@@ -42,10 +42,10 @@ mkdir /var/www/html/wp-content/uploads
 cp /vagrant/conf/web/wp-config.php /var/www/html
 chown -R apache:apache /var/www/html/*
 
-
 setsebool -P httpd_unified 1 
 systemctl reload httpd
 
-
+cp /vagrant/conf/web/icap.html /var/www/html
+chown apache:apache /var/www/html/icap.html
 
 

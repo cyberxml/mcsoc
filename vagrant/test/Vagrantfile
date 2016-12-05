@@ -16,4 +16,14 @@ Vagrant.configure("2") do |config|
     testmail.vm.network "forwarded_port", guest: 31443, host:31443
     testmail.vm.synced_folder ".", "/vagrant", type: "virtualbox"
   end
+
+  # https://sourceforge.net/projects/mutillidae/files/mutillidae-project/LATEST-mutillidae-2.6.42.zip
+  config.vm.define "testweb" do |testweb|
+    testweb.vm.box = "centos/7"
+    testweb.vm.hostname = "testweb"
+    testweb.vm.network "private_network", ip: "10.10.1.114", gateway: "10.10.1.1", virtualbox__intnet: true
+    testweb.vm.network "forwarded_port", guest: 80, host:32080
+    testweb.vm.network "forwarded_port", guest: 443, host:32443
+    testweb.vm.synced_folder ".", "/vagrant", type: "virtualbox"
+  end
 end
