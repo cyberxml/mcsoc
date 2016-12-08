@@ -1,4 +1,6 @@
 10.10.3.3	dmzdns.example.net dmzdns
-10.10.3.4	dmzmail.example.net dmzmail
+10.10.3.4	dmzmail.example.net dmzmail mail.example.net
+10.10.3.5	dmzweb.example.net dmzweb www.example.net
+10.10.3.6	proxy.example.net proxy
 127.0.0.1   localhost localhost.localdomain localhost4 localhost4.localdomain4
 ::1         localhost localhost.localdomain localhost6 localhost6.localdomain6
