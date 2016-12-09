@@ -9,7 +9,7 @@ Vagrant.configure("2") do |config|
 
   config.vm.define "entwks101" do |entwks101|
     entwks101.vm.box = "artem-sidorenko/mint-18.0-cinnamon"
-    entwks101.vm.hostname = "entws101"
-    entwks101.vm.network "private_network", ip: "10.10.9.101", gateway: "10.10.9.2", nameserver1: "10.10.8.11", virtualbox__intnet: true
+    entwks101.vm.hostname = "entwks101"
+    entwks101.vm.network "private_network", ip: "10.10.9.101", virtualbox__intnet: true
   end
 end
