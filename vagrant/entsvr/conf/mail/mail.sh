@@ -3,22 +3,15 @@
 #---------------------------------------
 
 # /etc/hosts
-echo "10.10.8.13 mail.example.net mail" > /tmp/hosts
-cat /etc/hosts >> /tmp/hosts
-echo y | cp /tmp/hosts /etc/hosts
-rm /tmp/hosts
+cp /vagrant/conf/mail/hosts /etc/hosts
 
 # /etc/resolv.conf
 chattr -i /etc/resolv.conf
-echo "nameserver 10.10.8.11" > /etc/resolv.conf
-echo "nameserver 192.168.0.1" >> /etc/resolv.conf
-echo "search example.net" >> /etc/resolv.conf
+cp /vagrant/conf/mail/resolv.conf /etc/resolv.conf
 chattr +i /etc/resolv.conf
 
 # routing
-chmod +x /etc/rc.d/rc.local
-echo "ip route add 10.10.0.0/16 via 10.10.8.1" >> /etc/rc.d/rc.local
-/etc/rc.d/rc.local
+cp /vagrant/conf/mail/route-eth1 /etc/sysconfig/network-scripts
 
 # network interfaces
 yum -y install net-tools
