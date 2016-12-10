@@ -1,0 +1,165 @@
+[F]	ENTSVR	Block direct web access from ENTSVR to TEST Web on Port 80	./test_internal_direct_web_access_to_testweb.sh
+[P]	ENTSVR	Allow ping from ENTSVR to DMZ DNS	./test_internal_ping_to_dmzdns.sh
+[P]	ENTSVR	Allow ping from ENTSVR to DMZ MAIL	./test_internal_ping_to_dmzmail.sh
+[P]	ENTSVR	Allow ping from ENTSVR to DMZ PROXY	./test_internal_ping_to_dmzproxy.sh
+[P]	ENTSVR	Allow ping from ENTSVR to DMZ WEB	./test_internal_ping_to_dmzweb.sh
+[P]	ENTSVR	Allow ping from ENTSVR to External Mail	./test_internal_ping_to_testmail.sh
+[P]	ENTSVR	Allow ping from ENTSVR to External Web	./test_internal_ping_to_testweb.sh
+[P]	ENTSVR	Block proxied web access to EICAR from ENTSVR to TEST Web on Port 80	./test_internal_proxy_web_access_to_testweb_eicar.sh
+[P]	ENTSVR	Allow proxied web access from ENTSVR to TEST Web on Port 80	./test_internal_proxy_web_access_to_testweb.sh
+[P]	ENTSVR	Resolve DMZ DNS Host from ENTSVR	./test_internal_resolve_dmzdns.sh
+[P]	ENTSVR	Resolve ENTSVR DNS Host from ENTSVR	./test_internal_resolve_entdns.sh
+[P]	ENTSVR	Resolve ENTSVR File Host from ENTSVR	./test_internal_resolve_entfile.sh
+[P]	ENTSVR	Resolve ENTSVR Mail Host from ENTSVR	./test_internal_resolve_entmail.sh
+[P]	ENTSVR	Resolve ENTSVR Web Host from ENTSVR	./test_internal_resolve_entweb.sh
+[F]	ENTSVR	Resolve External Mail Host from ENTSVR	./test_internal_resolve_testmail.sh
+[F]	ENTSVR	Resolve External Web Host from ENTSVR	./test_internal_resolve_testweb.sh
+[P]	ENTSVR	Allow TCP ping from ENTSVR to DMZ DNS on Port 22	./test_internal_tcp_to_dmzdns-22.sh
+[P]	ENTSVR	Allow TCP ping from ENTSVR to DMZ DNS on Port 53	./test_internal_tcp_to_dmzdns-53.sh
+[P]	ENTSVR	Allow TCP ping from ENTSVR to DMZ MAIL on Port 110	./test_internal_tcp_to_dmzmail-110.sh
+[P]	ENTSVR	Allow TCP ping from ENTSVR to DMZ MAIL on Port 143	./test_internal_tcp_to_dmzmail-143.sh
+[P]	ENTSVR	Allow TCP ping from ENTSVR to DMZ MAIL on Port 22	./test_internal_tcp_to_dmzmail-22.sh
+[P]	ENTSVR	Allow TCP ping from ENTSVR to DMZ MAIL on Port 993	./test_internal_tcp_to_dmzmail-993.sh
+[P]	ENTSVR	Allow TCP ping from ENTSVR to DMZ MAIL on Port 995	./test_internal_tcp_to_dmzmail-995.sh
+[P]	ENTSVR	Allow TCP ping from ENTSVR to DMZ MAIL on Port 1344	./test_internal_tcp_to_dmzproxy-1344.sh
+[P]	ENTSVR	Allow TCP ping from ENTSVR to DMZ MAIL on Port 22	./test_internal_tcp_to_dmzproxy-22.sh
+[P]	ENTSVR	Allow TCP ping from ENTSVR to DMZ MAIL on Port 3310	./test_internal_tcp_to_dmzproxy-3310.sh
+[P]	ENTSVR	Allow TCP ping from ENTSVR to DMZ WEB on Port 22	./test_internal_tcp_to_dmzweb-22.sh
+[P]	ENTSVR	Allow TCP ping from ENTSVR to DMZ WEB on Port 443	./test_internal_tcp_to_dmzweb-443.sh
+[P]	ENTSVR	Allow TCP ping from ENTSVR to DMZ WEB on Port 80	./test_internal_tcp_to_dmzweb-80.sh
+[P]	ENTSVR	Allow TCP ping from ENTSVR to ENTSVR DNS on Port 1024	./test_internal_tcp_to_entdns-1024.sh
+[P]	ENTSVR	Allow TCP ping from ENTSVR to ENTSVR DNS on Port 135	./test_internal_tcp_to_entdns-135.sh
+[P]	ENTSVR	Allow TCP ping from ENTSVR to ENTSVR DNS on Port 139	./test_internal_tcp_to_entdns-139.sh
+[P]	ENTSVR	Allow TCP ping from ENTSVR to ENTSVR DNS on Port 22	./test_internal_tcp_to_entdns-22.sh
+[P]	ENTSVR	Allow TCP ping from ENTSVR to ENTSVR DNS on Port 3268	./test_internal_tcp_to_entdns-3268.sh
+[P]	ENTSVR	Allow TCP ping from ENTSVR to ENTSVR DNS on Port 3269	./test_internal_tcp_to_entdns-3269.sh
+[P]	ENTSVR	Allow TCP ping from ENTSVR to ENTSVR DNS on Port 389	./test_internal_tcp_to_entdns-389.sh
+[P]	ENTSVR	Allow TCP ping from ENTSVR to ENTSVR DNS on Port 44403	./test_internal_tcp_to_entdns-44403.sh
+[P]	ENTSVR	Allow TCP ping from ENTSVR to ENTSVR DNS on Port 445	./test_internal_tcp_to_entdns-445.sh
+[P]	ENTSVR	Allow TCP ping from ENTSVR to ENTSVR DNS on Port 464	./test_internal_tcp_to_entdns-464.sh
+[P]	ENTSVR	Allow TCP ping from ENTSVR to ENTSVR DNS on Port 53	./test_internal_tcp_to_entdns-53.sh
+[P]	ENTSVR	Allow TCP ping from ENTSVR to ENTSVR DNS on Port 636	./test_internal_tcp_to_entdns-636.sh
+[P]	ENTSVR	Allow TCP ping from ENTSVR to ENTSVR DNS  on Port 88	./test_internal_tcp_to_entdns-88.sh
+[P]	ENTSVR	Allow TCP ping from ENTSVR to ENTSVR Email on Port 110	./test_internal_tcp_to_entmail-110.sh
+[P]	ENTSVR	Allow TCP ping from ENTSVR to ENTSVR Email on Port 143	./test_internal_tcp_to_entmail-143.sh
+[P]	ENTSVR	Allow TCP ping from ENTSVR to ENTSVR Email on Port 22	./test_internal_tcp_to_entmail-22.sh
+[P]	ENTSVR	Allow TCP ping from ENTSVR to ENTSVR Email on Port 25	./test_internal_tcp_to_entmail-25.sh
+[F]	ENTSVR	Allow TCP ping from ENTSVR to ENTSVR Email on Port 3306	./test_internal_tcp_to_entmail-3306.sh
+[F]	ENTSVR	Allow TCP ping from ENTSVR to ENTSVR Email on Port 389	./test_internal_tcp_to_entmail-389.sh
+[P]	ENTSVR	Allow TCP ping from ENTSVR to ENTSVR Email on Port 443	./test_internal_tcp_to_entmail-443.sh
+[P]	ENTSVR	Allow TCP ping from ENTSVR to ENTSVR Email on Port 587	./test_internal_tcp_to_entmail-587.sh
+[P]	ENTSVR	Allow TCP ping from ENTSVR to ENTSVR Email on Port 80	./test_internal_tcp_to_entmail-80.sh
+[P]	ENTSVR	Allow TCP ping from ENTSVR to ENTSVR Email on Port 993	./test_internal_tcp_to_entmail-993.sh
+[P]	ENTSVR	Allow TCP ping from ENTSVR to ENTSVR Email on Port 995	./test_internal_tcp_to_entmail-995.sh
+[P]	ENTSVR	Allow TCP ping from ENTSVR to ENTSVR Web on Port 22	./test_internal_tcp_to_entweb-22.sh
+[P]	ENTSVR	Allow TCP ping from ENTSVR to ENTSVR Web on Port 3306	./test_internal_tcp_to_entweb-3306.sh
+[F]	ENTSVR	Allow TCP ping from ENTSVR to ENTSVR Web on Port 443	./test_internal_tcp_to_entweb-443.sh
+[P]	ENTSVR	Allow TCP ping from ENTSVR to ENTSVR Web on Port 80	./test_internal_tcp_to_entweb-80.sh
+[F]	DMZ	Block ping from DMZ Hosts to ENTSVR DNS	./test_dmz_ping_to_entdns.sh
+[P]	DMZ	Allow ping from DMZ Hosts to ENTSVR Mail	./test_dmz_ping_to_entfile.sh
+[P]	DMZ	Allow ping from DMZ Hosts to ENTSVR Web	./test_dmz_ping_to_entmail.sh
+[F]	DMZ	Block ping from DMZ Hosts to ENTSVR Files	./test_dmz_ping_to_entweb.sh
+[P]	DMZ	Allow ping from DMZ Hosts to External Mail	./test_dmz_ping_to_testmail.sh
+[P]	DMZ	Allow ping from DMZ Hosts to External Web	./test_dmz_ping_to_testweb.sh
+[P]	DMZ	Resolve DMZ DNS from DMZ	./test_dmz_resolve_dmzdns.sh
+[P]	DMZ	Resolve DMZ MAIL from DMZ	./test_dmz_resolve_dmzmail.sh
+[P]	DMZ	Resolve DMZ WEB from DMZ	./test_dmz_resolve_dmzproxy.sh
+[P]	DMZ	Resolve DMZ PROXY from DMZ	./test_dmz_resolve_dmzweb.sh
+[P]	DMZ	Do not resolve ENTSVR DNS Host from DMZ	./test_dmz_resolve_entdns.sh
+[P]	DMZ	Do not resolve ENTSVR File Host from DMZ	./test_dmz_resolve_entfile.sh
+[P]	DMZ	Do not resolve ENTSVR Mail Host from DMZ	./test_dmz_resolve_entmail.sh
+[P]	DMZ	Do not resolve ENTSVR Web Host from DMZ	./test_dmz_resolve_entweb.sh
+[P]	DMZ	Resolve External Mail Host from DMZ	./test_dmz_resolve_testmail.sh
+[P]	DMZ	Resolve External Web Host from DMZ	./test_dmz_resolve_testweb.sh
+[P]	DMZ	Allow TCP ping from DMZ to DMZ DNS on Port 22	./test_dmz_tcp_to_dmzdns-22.sh
+[P]	DMZ	Allow TCP ping from DMZ to DMZ DNS on Port 53	./test_dmz_tcp_to_dmzdns-53.sh
+[P]	DMZ	Allow TCP ping from DMZ to DMZ MAIL on Port 110	./test_dmz_tcp_to_dmzmail-110.sh
+[P]	DMZ	Allow TCP ping from DMZ to DMZ MAIL on Port 143	./test_dmz_tcp_to_dmzmail-143.sh
+[P]	DMZ	Allow TCP ping from DMZ to DMZ MAIL on Port 22	./test_dmz_tcp_to_dmzmail-22.sh
+[P]	DMZ	Allow TCP ping from DMZ to DMZ MAIL on Port 993	./test_dmz_tcp_to_dmzmail-993.sh
+[P]	DMZ	Allow TCP ping from DMZ to DMZ MAIL on Port 995	./test_dmz_tcp_to_dmzmail-995.sh
+[P]	DMZ	Allow TCP ping from DMZ to DMZ MAIL on Port 1344	./test_dmz_tcp_to_dmzproxy-1344.sh
+[P]	DMZ	Allow TCP ping from DMZ to DMZ PROXY on Port 22	./test_dmz_tcp_to_dmzproxy-22.sh
+[P]	DMZ	Allow TCP ping from DMZ to DMZ PROXY on Port 3310	./test_dmz_tcp_to_dmzproxy-3310.sh
+[P]	DMZ	Allow TCP ping from DMZ to DMZ WEB on Port 22	./test_dmz_tcp_to_dmzweb-22.sh
+[P]	DMZ	Allow TCP ping from DMZ to DMZ WEB on Port 443	./test_dmz_tcp_to_dmzweb-443.sh
+[P]	DMZ	Allow TCP ping from DMZ to DMZ WEB on Port 80	./test_dmz_tcp_to_dmzweb-80.sh
+[F]	DMZ	Block TCP ping from DMZ to ENTSVR DNS on Port 22	./test_dmz_tcp_to_entdns-22.sh
+[F]	DMZ	Block TCP ping from DMZ to ENTSVR DNS on Port 53	./test_dmz_tcp_to_entdns-53.sh
+[F]	DMZ	Block TCP ping from DMZ to ENTSVR FILE on Port 22	./test_dmz_tcp_to_entfile-22.sh
+[P]	DMZ	Allow TCP ping from DMZ to ENTSVR MAIL on Port 110	./test_dmz_tcp_to_entmail-110.sh
+[P]	DMZ	Allow TCP ping from DMZ to ENTSVR MAIL on Port 143	./test_dmz_tcp_to_entmail-143.sh
+[F]	DMZ	Block TCP ping from DMZ to ENTSVR MAIL on Port 22	./test_dmz_tcp_to_entmail-22.sh
+[P]	DMZ	Allow TCP ping from DMZ to ENTSVR MAIL on Port 993	./test_dmz_tcp_to_entmail-993.sh
+[P]	DMZ	Allow TCP ping from DMZ to ENTSVR MAIL on Port 995	./test_dmz_tcp_to_entmail-995.sh
+[F]	DMZ	Block TCP ping from DMZ to ENTSVR WEB on Port 22	./test_dmz_tcp_to_entweb-22.sh
+[F]	DMZ	Allow TCP ping from DMZ to ENTSVR WEB on Port 443	./test_dmz_tcp_to_entweb-443.sh
+[P]	DMZ	Allow TCP ping from DMZ to ENTSVR WEB on Port 80	./test_dmz_tcp_to_entweb-80.sh
+[P]	DMZ	Allow TCP ping from DMZ to TEST MAIL on Port 110	./test_dmz_tcp_to_testmail-110.sh
+[P]	DMZ	Allow TCP ping from DMZ to TEST MAIL on Port 143	./test_dmz_tcp_to_testmail-143.sh
+[P]	DMZ	Allow TCP ping from DMZ to TEST MAIL on Port 22	./test_dmz_tcp_to_testmail-22.sh
+[P]	DMZ	Allow TCP ping from DMZ to TEST MAIL on Port 25	./test_dmz_tcp_to_testmail-25.sh
+[F]	DMZ	Allow TCP ping from DMZ to TEST MAIL on Port 3306	./test_dmz_tcp_to_testmail-3306.sh
+[F]	DMZ	Allow TCP ping from DMZ to TEST MAIL on Port 389	./test_dmz_tcp_to_testmail-389.sh
+[P]	DMZ	Allow TCP ping from DMZ to TEST MAIL on Port 53	./test_dmz_tcp_to_testmail-53.sh
+[P]	DMZ	Allow TCP ping from DMZ to TEST MAIL on Port 587	./test_dmz_tcp_to_testmail-587.sh
+[P]	DMZ	Allow TCP ping from DMZ to TEST MAIL on Port 993	./test_dmz_tcp_to_testmail-993.sh
+[P]	DMZ	Allow TCP ping from DMZ to TEST MAIL on Port 995	./test_dmz_tcp_to_testmail-995.sh
+[P]	DMZ	Allow TCP ping from DMZ to TEST WEB on Port 22	./test_dmz_tcp_to_testweb-22.sh
+[P]	DMZ	Allow TCP ping from DMZ to TEST WEB on Port 3306	./test_dmz_tcp_to_testweb-3306.sh
+[F]	DMZ	Allow TCP ping from DMZ to TEST WEB on Port 443	./test_dmz_tcp_to_testweb-443.sh
+[P]	DMZ	Allow TCP ping from DMZ to TEST WEB on Port 80	./test_dmz_tcp_to_testweb-80.sh
+[P]	DMZ	Resolve DMZ MAIL from TEST	./test_dmz_resolve_dmzmail.sh
+[F]	TEST	Block direct web access from TEST to ENTSVR Web on Port 80	./test_external_direct_web_access_to_entweb.sh
+[P]	TEST	Allow ping from External Hosts to DMZ DNS	./test_external_ping_to_dmzdns.sh
+[P]	TEST	Allow ping from External Hosts to DMZ MAIL	./test_external_ping_to_dmzmail.sh
+[P]	TEST	Allow ping from External Hosts to DMZ PROXY	./test_external_ping_to_dmzproxy.sh
+[P]	TEST	Allow ping from External Hosts to DMZ WEB	./test_external_ping_to_dmzweb.sh
+[F]	TEST	Block ping from External Hosts to Internal DNS	./test_external_ping_to_entdns.sh
+[F]	TEST	Block ping from External Hosts to Internal Mail	./test_external_ping_to_entfile.sh
+[F]	TEST	Block ping from External Hosts to Internal Web	./test_external_ping_to_entmail.sh
+[F]	TEST	Block ping from External Hosts to Internal Files	./test_external_ping_to_entweb.sh
+[P]	TEST	Allow ping from TEST Hosts to TEST Mail	./test_external_ping_to_testmail.sh
+[P]	TEST	Allow ping from TEST Hosts to TEST Web	./test_external_ping_to_testweb.sh
+[P]	TEST	Allow proxied web access from TEST to ENTSVR Web on Port 80	./test_external_proxied_web_access_to_entweb.sh
+[P]	DMZ	Resolve DMZ MAIL from TEST	./test_external_resolve_dmzmail.sh
+[P]	DMZ	Resolve DMZ WEB from TEST	./test_external_resolve_dmzweb.sh
+[P]	DMZ	Resolve EXAMPLE.NET from TEST	./test_external_resolve_example-net.sh
+[F]	TEST	Block TCP ping from TEST to DMZ DNS on Port 22	./test_external_tcp_to_dmzdns-22.sh
+[P]	TEST	Allow TCP ping from TEST to DMZ DNS on Port 53	./test_external_tcp_to_dmzdns-53.sh
+[P]	TEST	Allow TCP ping from TEST to DMZ MAIL on Port 110	./test_external_tcp_to_dmzmail-110.sh
+[P]	TEST	Allow TCP ping from TEST to DMZ MAIL on Port 143	./test_external_tcp_to_dmzmail-143.sh
+[F]	TEST	Block TCP ping from TEST to DMZ MAIL on Port 22	./test_external_tcp_to_dmzmail-22.sh
+[P]	TEST	Allow TCP ping from TEST to DMZ MAIL on Port 993	./test_external_tcp_to_dmzmail-993.sh
+[P]	TEST	Allow TCP ping from TEST to DMZ MAIL on Port 995	./test_external_tcp_to_dmzmail-995.sh
+[P]	TEST	Allow TCP ping from TEST to DMZ MAIL on Port 1344	./test_external_tcp_to_dmzproxy-1344.sh
+[F]	TEST	Block TCP ping from TEST to DMZ PROXY on Port 22	./test_external_tcp_to_dmzproxy-22.sh
+[P]	TEST	Allow TCP ping from TEST to DMZ PROXY on Port 3310	./test_external_tcp_to_dmzproxy-3310.sh
+[F]	TEST	Block TCP ping from TEST to DMZ WEB on Port 22	./test_external_tcp_to_dmzweb-22.sh
+[P]	TEST	Allow TCP ping from TEST to DMZ WEB on Port 443	./test_external_tcp_to_dmzweb-443.sh
+[P]	TEST	Allow TCP ping from TEST to DMZ WEB on Port 80	./test_external_tcp_to_dmzweb-80.sh
+[F]	TEST	Block TCP ping from TEST to ENTSVR DNS on Port 22	./test_external_tcp_to_entdns-22.sh
+[F]	TEST	Block TCP ping from TEST to ENTSVR DNS on Port 53	./test_external_tcp_to_entdns-53.sh
+[F]	TEST	Block TCP ping from TEST to ENTSVR FILE on Port 22	./test_external_tcp_to_entfile-22.sh
+[F]	TEST	Block TCP ping from TEST to ENTSVR MAIL on Port 110	./test_external_tcp_to_entmail-110.sh
+[F]	TEST	Block TCP ping from TEST to ENTSVR MAIL on Port 143	./test_external_tcp_to_entmail-143.sh
+[F]	TEST	Block TCP ping from TEST to ENTSVR MAIL on Port 22	./test_external_tcp_to_entmail-22.sh
+[F]	TEST	Block TCP ping from TEST to ENTSVR MAIL on Port 993	./test_external_tcp_to_entmail-993.sh
+[F]	TEST	Block TCP ping from TEST to ENTSVR MAIL on Port 995	./test_external_tcp_to_entmail-995.sh
+[F]	TEST	Block TCP ping from TEST to ENTSVR WEB on Port 22	./test_external_tcp_to_entweb-22.sh
+[P]	TEST	Block TCP ping from TEST to ENTSVR WEB on Port 443	./test_external_tcp_to_entweb-443.sh
+[F]	TEST	Block TCP ping from TEST to ENTSVR WEB on Port 80	./test_external_tcp_to_entweb-80.sh
+[P]	TEST	Allow TCP ping from TEST to TEST MAIL on Port 110	./test_external_tcp_to_testmail-110.sh
+[P]	TEST	Allow TCP ping from TEST to TEST MAIL on Port 143	./test_external_tcp_to_testmail-143.sh
+[P]	TEST	Allow TCP ping from TEST to TEST MAIL on Port 22	./test_external_tcp_to_testmail-22.sh
+[P]	TEST	Allow TCP ping from TEST to TEST MAIL on Port 25	./test_external_tcp_to_testmail-25.sh
+[P]	TEST	Allow TCP ping from TEST to TEST MAIL on Port 3306	./test_external_tcp_to_testmail-3306.sh
+[P]	TEST	Allow TCP ping from TEST to TEST MAIL on Port 389	./test_external_tcp_to_testmail-389.sh
+[P]	TEST	Allow TCP ping from TEST to TEST MAIL on Port 53	./test_external_tcp_to_testmail-53.sh
+[P]	TEST	Allow TCP ping from TEST to TEST MAIL on Port 587	./test_external_tcp_to_testmail-587.sh
+[P]	TEST	Allow TCP ping from TEST to TEST MAIL on Port 993	./test_external_tcp_to_testmail-993.sh
+[P]	TEST	Allow TCP ping from TEST to TEST MAIL on Port 995	./test_external_tcp_to_testmail-995.sh
+[P]	TEST	Allow TCP ping from TEST to TEST WEB on Port 22	./test_external_tcp_to_testweb-22.sh
+[P]	TEST	Allow TCP ping from TEST to TEST WEB on Port 3306	./test_external_tcp_to_testweb-3306.sh
+[F]	TEST	Allow TCP ping from TEST to TEST WEB on Port 443	./test_external_tcp_to_testweb-443.sh
+[P]	TEST	Allow TCP ping from TEST to TEST WEB on Port 80	./test_external_tcp_to_testweb-80.sh

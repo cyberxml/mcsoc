@@ -101,3 +101,8 @@ echo "Verify settings at"
 echo "http://10.10.8..14/wp-admin/options-general.php"
 
 
+mkdir /var/html/www/eicar
+mkdir /var/html/www/test
+cp /vagrant/conf/web/test* /var/www/html/test
+chown -R apache:apache /var/html/www/eicar
+chown -R apache:apache /var/html/www/test

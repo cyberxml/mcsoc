@@ -13,4 +13,10 @@ $TTL 86400
 dc1	IN  A   10.10.8.11
 dc2     IN  A   10.10.8.12
 mail    IN  A   10.10.8.13
+web     IN  A   10.10.8.14
+file    IN  A   10.10.8.15
 entws101          IN  A   10.10.9.101
+dmzdns	IN A 	10.10.3.3
+dmzmail	IN A 	10.10.3.4
+dmzweb	IN A 	10.10.3.5
+proxy	IN A 	10.10.3.6

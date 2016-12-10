@@ -3,25 +3,18 @@
 #---------------------------------------
 
 # /etc/hosts
-echo "10.10.8.11 dc1.example.net dc1" > /tmp/hosts
-cat /etc/hosts >> /tmp/hosts
-echo y | cp /tmp/hosts /etc/hosts
-rm /tmp/hosts
+cp /vagrant/conf/dc/hosts /etc/hosts
 
 # /etc/resolv.conf 
 chattr -i /etc/resolv.conf
-echo "nameserver 10.10.8.11" > /etc/resolv.conf
-echo "nameserver 192.168.0.1" >> /etc/resolv.conf
-echo "search example.net" >> /etc/resolv.conf
+cp /vagrant/conf/dc/resolv.conf /etc/resolv.conf
 chattr +i /etc/resolv.conf
 
 # routing
-chmod +x /etc/rc.d/rc.local
-echo "ip route add 10.10.0.0/16 via 10.10.8.1" >> /etc/rc.d/rc.local
-/etc/rc.d/rc.local
+cp /vagrant/conf/dc/route-eth1 /etc/sysconfig/network-scripts
 
 # network interfaces
-yum -y install net-tools
+yum -y install net-tools bind-utils wget
 
 
 #---------------------------------------
@@ -31,8 +24,8 @@ yum -y install net-tools
 yum install -y bind bind-utils
 
 cp /vagrant/conf/dc/named.conf /etc/named.conf
-cp /vagrant/conf/dc/forward.example.net /var/named/
-cp /vagrant/conf/dc/reverse.example.net /var/named/
+cp /vagrant/conf/dc/bind/forward.example.net /var/named/
+cp /vagrant/conf/dc/bind/reverse.example.net /var/named/
 
 firewall-cmd --permanent --add-port=53/tcp
 firewall-cmd --permanent --add-port=53/udp

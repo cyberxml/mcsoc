@@ -83,3 +83,7 @@ cd /var/www/html/eicar
 /vagrant/conf/testweb/get-eicar.sh
 chown -R apache:apache /var/www/html/eicar
 
+mkdir /var/www/html/test
+cp /vagrant/conf/testweb/test.txt* /var/www/html/test
+chown -R apache:apache /var/www/html/test
+

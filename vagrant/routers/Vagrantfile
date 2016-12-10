@@ -4,6 +4,20 @@
 Vagrant.configure("2") do |config|
   config.vm.box = "cyberxml/pfsense-ce-232-64"
 
+  # Public Router: End of the World Router
+  # Needed to stablize External Router External Interface
+  config.vm.define "rtr_pub" do |rtr_pub|
+    rtr_pub.vm.box = "cyberxml/pfsense-ce-232-64"
+    rtr_pub.vm.hostname = "rtr-pub"
+    rtr_pub.ssh.shell = 'sh'
+    rtr_pub.ssh.username = 'vagrant'
+    rtr_pub.ssh.password = 'vagrant'
+    rtr_pub.vm.network "private_network", ip: "10.10.1.2", virtualbox__intnet: true
+    rtr_pub.vm.network "private_network", ip: "10.10.254.2", virtualbox__intnet: true
+    rtr_pub.vm.network "forwarded_port", guest: 443, host: 55432
+    rtr_pub.vm.synced_folder ".", "/vagrant", disabled: true
+  end
+
   # External Router
   config.vm.define "rtr_ext" do |rtr_ext|
     rtr_ext.vm.box = "cyberxml/pfsense-ce-232-64"

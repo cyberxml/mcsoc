@@ -9,11 +9,13 @@ $TTL 86400
 @       IN  NS          dc1.example.net.
 @       IN  NS          dc2.example.net.
 @       IN  PTR         example.net.
-dc1     IN  A   10.10.8.11
-dc2     IN  A   10.10.8.12
-mail    IN  A   10.10.8.13
-entws101          IN  A   10.10.9.101
 10.10.8.11     IN  PTR         dc1.example.net.
 10.10.8.12     IN  PTR         dc2.example.net.
 10.10.8.13     IN  PTR         mail.example.net.
+10.10.8.14     IN  PTR         web.example.net.
+10.10.8.15     IN  PTR         file.example.net.
 10.10.9.101    IN  PTR         entws101.example.net.
+10.10.3.3      IN  PTR         dmzdns.example.net.
+10.10.3.4      IN  PTR         dmzmail.example.net.
+10.10.3.5      IN  PTR         dmzweb.example.net.
+10.10.3.6      IN  PTR         proxy.example.net.

@@ -100,5 +100,5 @@ cp /vagrant/conf/proxy/squidclamav.conf /etc/squidclamav.conf
 mkdir /var/run/c-icap
 chown squid:squid /var/run/c-icap
 
-system enable c-icap
-system start c-icap
+systemctl enable c-icap
+systemctl start c-icap
