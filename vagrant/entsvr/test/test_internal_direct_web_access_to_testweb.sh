@@ -6,7 +6,7 @@ port="80"
 SHA1SUM="f09eefe9eacf911076ecaeeac71043e57b6b4d12"
 RETSTR=$(curl -s http://${host}:${port}/test/test.txt  | sha1sum | cut -d' ' -f1)
 if [[ $RETSTR == $SHA1SUM ]]; then
-	echo -e "[F]	ENTSVR	${test}	${0}"
+	echo -e "[F]	ROUTING	ENTSVR	${test}	${0}"
 else
-	echo -e "[P]	ENTSVR	${test}	${0}"
+	echo -e "[P]	ROUTING	ENTSVR	${test}	${0}"
 fi
