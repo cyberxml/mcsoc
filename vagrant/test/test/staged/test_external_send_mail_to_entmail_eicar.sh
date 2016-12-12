@@ -10,7 +10,7 @@ testphrase2='$EICAR-STANDARD-ANTIVIRUS-TEST-FILE!$H+H*'
 ( python send_email.py ${mailserver} ${fromaddress} ${toaddress} "${testphrase1}${testphrase2}" )
 RETVAL=$?
 if [ $RETVAL -eq 0 ]; then
-        echo -e "[P]    EMAIL FILTER	TEST     ${test} ${0}"
+        echo -e "[P]	EMAIL FILTER	TEST	${test}	${0}"
 else
-        echo -e "[F]    EMAIL FILTER	TEST     ${test} ${0}"
+        echo -e "[F]	EMAIL FILTER	TEST	${test}	${0}"
 fi

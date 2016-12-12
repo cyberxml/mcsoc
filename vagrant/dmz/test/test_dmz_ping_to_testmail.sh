@@ -8,7 +8,7 @@ ${pre} > /dev/null 2>&1
 ${cmd} > /dev/null 2>&1
 RETVAL=$?
 if [ $RETVAL -eq 0 ]; then
-	echo -e "[P]	DMZ	${test}	${0}"
+	echo -e "[P]	ROUTING	DMZ	${test}	${0}"
 else
-	echo -e "[F]	DMZ	${test}	${0}"
+	echo -e "[F]	ROUTING	DMZ	${test}	${0}"
 fi

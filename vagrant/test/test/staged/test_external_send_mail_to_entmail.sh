@@ -9,7 +9,7 @@ testphrase='Unittest TEST TO ENTSVR'
 ( python send_email.py ${mailserver} ${fromaddress} ${toaddress} "${testphrase}" )
 RETVAL=$?
 if [ $RETVAL -eq 0 ]; then
-        echo -e "[P]    EMAIL	TEST     ${test} ${0}"
+        echo -e "[P]	EMAIL	TEST	${test}	${0}"
 else
-        echo -e "[F]    EMAIL	TEST     ${test} ${0}"
+        echo -e "[F]	EMAIL	TEST	${test}	${0}"
 fi

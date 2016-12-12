@@ -8,7 +8,7 @@ testphrase='Unittest ENTSVR TO ENTSVR'
 ( python read_email.py ${mailserver} ${maillogin} ${mailpasswd} "${testphrase}" )
 RETVAL=$?
 if [ $RETVAL -eq 0 ]; then
-        echo -e "[P]    EMAIL	ENTSVR     ${test} ${0}"
+        echo -e "[P]	EMAIL	ENTSVR     ${test}	${0}"
 else
-        echo -e "[F]    EMAIL	ENTSVR     ${test} ${0}"
+        echo -e "[F]	EMAIL	ENTSVR     ${test}	${0}"
 fi

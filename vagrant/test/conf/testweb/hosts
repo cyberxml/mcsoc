@@ -1,3 +1,4 @@
-10.10.1.114	testweb.pub.test testweb pub.test
+10.10.1.114	testweb.pub.test	testweb
+10.10.1.113	testmail.pub.test	testmail
 127.0.0.1   localhost localhost.localdomain localhost4 localhost4.localdomain4
 ::1         localhost localhost.localdomain localhost6 localhost6.localdomain6

@@ -10,7 +10,7 @@ testphrase2='$EICAR-STANDARD-ANTIVIRUS-TEST-FILE!$H+H*'
 ( python read_email.py ${mailserver} ${maillogin} ${mailpasswd} "${testphrase}" )
 RETVAL=$?
 if [ $RETVAL -eq 0 ]; then
-        echo -e "[F]    EMAIL FILTER	ENTSVR     ${test} ${0}"
+        echo -e "[F]	EMAIL FILTER	ENTSVR     ${test}	${0}"
 else
-        echo -e "[P]    EMAIL FILTER	ENTSVR     ${test} ${0}"
+        echo -e "[P]	EMAIL FILTER	ENTSVR     ${test}	${0}"
 fi

@@ -1,0 +1,46 @@
+TEST PASSED: 149
+TEST FAILED: 39
+==================
+Total Tests: 189
+
+78.84% success rate
+
+[F]	EMAIL	ENTSVR     Read MAIL in ENTSVR from ENTSVR MAIL	./test_internal_read_mail_from_entmail.sh
+[F]	DNS	ENTSVR	Resolve External Mail Host from ENTSVR	./test_internal_resolve_testmail.sh
+[F]	DNS	ENTSVR	Resolve External Web Host from ENTSVR	./test_internal_resolve_testweb.sh
+[F]	ROUTING	ENTSVR     Allow TCP ping from ENTSVR to DMZ MAIL on Port 25	./test_internal_tcp_to_dmzmail-25.sh
+[F]	ROUTING	ENTSVR	Allow TCP ping from ENTSVR to ENTSVR Email on Port 3306	./test_internal_tcp_to_entmail-3306.sh
+[F]	ROUTING	ENTSVR	Allow TCP ping from ENTSVR to ENTSVR Email on Port 389	./test_internal_tcp_to_entmail-389.sh
+[F]	ROUTING	ENTSVR	Allow TCP ping from ENTSVR to ENTSVR Web on Port 443	./test_internal_tcp_to_entweb-443.sh
+[F]	ROUTING	DMZ	Allow TCP ping from DMZ to DMZ MAIL on Port 25	./test_dmz_tcp_to_dmzmail-25.sh
+[F]	ROUTING	DMZ	Block TCP ping from DMZ to ENTSVR DNS on Port 53	./test_dmz_tcp_to_entdns-53.sh
+[F]	ROUTING	DMZ	Allow TCP ping from DMZ to ENTSVR MAIL on Port 110	./test_dmz_tcp_to_entmail-110.sh
+[F]	ROUTING	DMZ	Allow TCP ping from DMZ to ENTSVR MAIL on Port 143	./test_dmz_tcp_to_entmail-143.sh
+[F]	ROUTING	DMZ	Allow TCP ping from DMZ to ENTSVR MAIL on Port 993	./test_dmz_tcp_to_entmail-993.sh
+[F]	ROUTING	DMZ	Allow TCP ping from DMZ to ENTSVR MAIL on Port 995	./test_dmz_tcp_to_entmail-995.sh
+[F]	ROUTING	DMZ	Allow TCP ping from DMZ to ENTSVR WEB on Port 443	./test_dmz_tcp_to_entweb-443.sh
+[F]	ROUTING	DMZ	Allow TCP ping from DMZ to ENTSVR WEB on Port 80	./test_dmz_tcp_to_entweb-80.sh
+[F]	ROUTING	DMZ	Allow TCP ping from DMZ to TEST MAIL on Port 3306	./test_dmz_tcp_to_testmail-3306.sh
+[F]	ROUTING	DMZ	Allow TCP ping from DMZ to TEST MAIL on Port 389	./test_dmz_tcp_to_testmail-389.sh
+[F]	ROUTING	DMZ	Allow TCP ping from DMZ to TEST WEB on Port 443	./test_dmz_tcp_to_testweb-443.sh
+[F]	WEB	TEST	Allow proxied web access from TEST to ENTSVR Web on Port 80	./test_external_proxied_web_access_to_entweb.sh
+[F]	EMAIL	ENTSVR     Read MAIL in TEST from TEST MAIL	./test_external_read_mail_from_testmail.sh
+[F]	ROUTING	TEST	Allow TCP ping from TEST to DMZ MAIL on Port 25	./test_external_tcp_to_dmzmail-25.sh
+[F]	ROUTING	TEST	Allow TCP ping from TEST to TEST WEB on Port 443	./test_external_tcp_to_testweb-443.sh
+[F]	WEB FILTER	TEST	Block Web Request with Bad IP Reputation	./test_external_web_block-bad-ip-reputation.sh
+[F]	WEB FILTER	TEST	Block Web Request with Bad HTTP Protocol	./test_external_web_block-bad-protocol.sh
+[F]	WEB FILTER	TEST	Block Web Request with Denial of Service	./test_external_web_block-denial-of-service.sh
+[F]	WEB FILTER	TEST	Block Web Request with Local File Inclusion	./test_external_web_block-lfi.sh
+[F]	WEB FILTER	TEST	Block Web Request with PHP Code Injection	./test_external_web_block-php.sh
+[F]	WEB FILTER	TEST	Block Web Request with HTTPoxy Attack	./test_external_web_block-protocol-attack.sh
+[F]	WEB FILTER	TEST	Block Web Request with Remote Code Exectution	./test_external_web_block-rce.sh
+[F]	WEB FILTER	TEST	Block Web Request with Remote File Inclusion	./test_external_web_block-rfi.sh
+[F]	WEB FILTER	TEST	Block Web Request with Session Fixation	./test_external_web_block-session-fixation.sh
+[F]	WEB FILTER	TEST	Block Web Request with SQL Injection	./test_external_web_block-sqli.sh
+[F]	WEB FILTER	TEST	Block Web Request with Cross Site Scripting	./test_external_web_block-xss.sh
+[F]	EMAIL	TEST	Send MAIL from TEST to ENTSVR MAIL via DMZ	/vagrant/test/staged/test_external_send_mail_to_entmail.sh
+[F]	EMAIL FILTER	TEST	Send MAIL from TEST to ENTSVR MAIL via DMZ with EICAR in message	/vagrant/test/staged/test_external_send_mail_to_entmail_eicar.sh
+[F]	EMAIL	ENTSVR	Read MAIL in ENTSVR from TEST MAIL	/vagrant/test/staged/test_internal_read_mail_from_testmail.sh
+[F]	EMAIL FILTER	ENTSVR	Block MAIL in ENTSVR from TEST MAIL wih EICAR text	/vagrant/test/staged/test_internal_read_mail_from_testmail_eicar.sh
+[F]	EMAIL	ENTSVR	Send MAIL from ENTSVR to TEST via DMZMAIL	/vagrant/test/staged/test_internal_send_mail_to_testmail.sh
+[F]	EMAIL	TEST	Read MAIL in TEST from ENTSVR MAIL	/vagrant/test/staged/test_external_read_mail_from_entmail.sh
