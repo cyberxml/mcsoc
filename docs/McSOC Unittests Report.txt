@@ -90,7 +90,7 @@
 [P]	ROUTING	DMZ	Allow TCP ping from DMZ to DMZ WEB on Port 443	./test_dmz_tcp_to_dmzweb-443.sh
 [P]	ROUTING	DMZ	Allow TCP ping from DMZ to DMZ WEB on Port 80	./test_dmz_tcp_to_dmzweb-80.sh
 [P]	ROUTING	DMZ	Block TCP ping from DMZ to ENTSVR DNS on Port 22	./test_dmz_tcp_to_entdns-22.sh
-[F]	ROUTING	DMZ	Block TCP ping from DMZ to ENTSVR DNS on Port 53	./test_dmz_tcp_to_entdns-53.sh
+[P]	ROUTING	DMZ	Block TCP ping from DMZ to ENTSVR DNS on Port 53	./test_dmz_tcp_to_entdns-53.sh
 [P]	ROUTING	DMZ	Block TCP ping from DMZ to ENTSVR FILE on Port 22	./test_dmz_tcp_to_entfile-22.sh
 [F]	ROUTING	DMZ	Allow TCP ping from DMZ to ENTSVR MAIL on Port 110	./test_dmz_tcp_to_entmail-110.sh
 [F]	ROUTING	DMZ	Allow TCP ping from DMZ to ENTSVR MAIL on Port 143	./test_dmz_tcp_to_entmail-143.sh

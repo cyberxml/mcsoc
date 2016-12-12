@@ -1,9 +1,9 @@
-TEST PASSED: 149
-TEST FAILED: 39
+TEST PASSED: 150
+TEST FAILED: 38
 ==================
 Total Tests: 189
 
-78.84% success rate
+79.37% success rate
 
 [F]	EMAIL	ENTSVR     Read MAIL in ENTSVR from ENTSVR MAIL	./test_internal_read_mail_from_entmail.sh
 [F]	DNS	ENTSVR	Resolve External Mail Host from ENTSVR	./test_internal_resolve_testmail.sh
@@ -13,7 +13,6 @@ Total Tests: 189
 [F]	ROUTING	ENTSVR	Allow TCP ping from ENTSVR to ENTSVR Email on Port 389	./test_internal_tcp_to_entmail-389.sh
 [F]	ROUTING	ENTSVR	Allow TCP ping from ENTSVR to ENTSVR Web on Port 443	./test_internal_tcp_to_entweb-443.sh
 [F]	ROUTING	DMZ	Allow TCP ping from DMZ to DMZ MAIL on Port 25	./test_dmz_tcp_to_dmzmail-25.sh
-[F]	ROUTING	DMZ	Block TCP ping from DMZ to ENTSVR DNS on Port 53	./test_dmz_tcp_to_entdns-53.sh
 [F]	ROUTING	DMZ	Allow TCP ping from DMZ to ENTSVR MAIL on Port 110	./test_dmz_tcp_to_entmail-110.sh
 [F]	ROUTING	DMZ	Allow TCP ping from DMZ to ENTSVR MAIL on Port 143	./test_dmz_tcp_to_entmail-143.sh
 [F]	ROUTING	DMZ	Allow TCP ping from DMZ to ENTSVR MAIL on Port 993	./test_dmz_tcp_to_entmail-993.sh
