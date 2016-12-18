@@ -1,0 +1,37 @@
+TEST PASSED: 157
+TEST FAILED: 30
+==================
+Total Tests: 189
+
+83.07% success rate
+
+[F]	DNS	ENTSVR	Resolve External Web Host from ENTSVR	./test_internal_resolve_testweb.sh
+[F]	ROUTING	ENTSVR	Allow TCP ping from ENTSVR to ENTSVR Web on Port 443	./test_internal_tcp_to_entweb-443.sh
+[F]	EMAIL FILTER	ENTSVR     Block MAIL in ENTSVR from ENTSVR MAIL wih EICAR text	./test_internal_read_mail_from_entmail_eicar.sh
+[F]	DNS	ENTSVR	Resolve External Mail Host from ENTSVR	./test_internal_resolve_testmail.sh
+[F]	ROUTING	ENTSVR     Allow TCP ping from ENTSVR to DMZ MAIL on Port 25	./test_internal_tcp_to_dmzmail-25.sh
+[F]	ROUTING	DMZ	Block ping from DMZ Hosts to ENTSVR DNS	./test_dmz_ping_to_entdns.sh
+[F]	ROUTING	DMZ	Block ping from DMZ Hosts to ENTSVR Mail	./test_dmz_ping_to_entfile.sh
+[F]	ROUTING	DMZ	Block TCP ping from DMZ to ENTSVR DNS on Port 53	./test_dmz_tcp_to_entdns-53.sh
+[F]	ROUTING	DMZ	Block ping from DMZ Hosts to ENTSVR Mail	./test_dmz_ping_to_entmail.sh
+[F]	ROUTING	DMZ	Allow TCP ping from DMZ to DMZ MAIL on Port 25	./test_dmz_tcp_to_dmzmail-25.sh
+[F]	ROUTING	DMZ	Block ping from DMZ Hosts to ENTSVR Files	./test_dmz_ping_to_entweb.sh
+[F]	ROUTING	DMZ	Allow TCP ping from DMZ to ENTSVR WEB on Port 443	./test_dmz_tcp_to_entweb-443.sh
+[F]	ROUTING	DMZ	Allow TCP ping from DMZ to TEST WEB on Port 443	./test_dmz_tcp_to_testweb-443.sh
+[F]	ROUTING	TEST	Allow TCP ping from TEST to DMZ MAIL on Port 25	./test_external_tcp_to_dmzmail-25.sh
+[F]	ROUTING	TEST	Allow TCP ping from TEST to TEST WEB on Port 443	./test_external_tcp_to_testweb-443.sh
+[F]	WEB FILTER	TEST	Block Web Request with Bad IP Reputation	./test_external_web_block-bad-ip-reputation.sh
+[F]	WEB FILTER	TEST	Block Web Request with Bad HTTP Protocol	./test_external_web_block-bad-protocol.sh
+[F]	WEB FILTER	TEST	Block Web Request with Denial of Service	./test_external_web_block-denial-of-service.sh
+[F]	WEB FILTER	TEST	Block Web Request with Local File Inclusion	./test_external_web_block-lfi.sh
+[F]	WEB FILTER	TEST	Block Web Request with PHP Code Injection	./test_external_web_block-php.sh
+[F]	WEB FILTER	TEST	Block Web Request with HTTPoxy Attack	./test_external_web_block-protocol-attack.sh
+[F]	WEB FILTER	TEST	Block Web Request with Remote Code Exectution	./test_external_web_block-rce.sh
+[F]	WEB FILTER	TEST	Block Web Request with Remote File Inclusion	./test_external_web_block-rfi.sh
+[F]	WEB FILTER	TEST	Block Web Request with Session Fixation	./test_external_web_block-session-fixation.sh
+[F]	WEB FILTER	TEST	Block Web Request with SQL Injection	./test_external_web_block-sqli.sh
+[F]	WEB FILTER	TEST	Block Web Request with Cross Site Scripting	./test_external_web_block-xss.sh
+[F]	EMAIL	TEST	Send MAIL from TEST to ENTSVR MAIL via DMZ	/vagrant/test/testmail/staged/test_external_send_mail_to_entmail.sh
+[F]	EMAIL FILTER	TEST	Send MAIL from TEST to ENTSVR MAIL via DMZ with EICAR in message	/vagrant/test/testmail/staged/test_external_send_mail_to_entmail_eicar.sh
+[F]	EMAIL	ENTSVR	Send MAIL from ENTSVR to TEST via DMZMAIL	/vagrant/test/entmail/staged/test_internal_send_mail_to_testmail.sh
+[F]	EMAIL	TEST	Read MAIL in TEST from ENTSVR MAIL	/vagrant/test/testmail/staged/test_external_read_mail_from_entmail.sh

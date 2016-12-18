@@ -36,12 +36,20 @@ Vagrant.configure("2") do |config|
     web.vm.synced_folder ".", "/vagrant", type: "virtualbox"
   end
 
-  # File Server: NFS SMB
+  # File Server: NFS
   config.vm.define "file" do |file|
     file.vm.box = "centos/7"
     file.vm.hostname = "files"
     file.vm.network "private_network", ip: "10.10.8.15", gateway: "10.10.8.1", virtualbox__intnet: true
     file.vm.synced_folder ".", "/vagrant", type: "virtualbox"
+  end
+
+  # File Server: SMB
+  config.vm.define "smb" do |smb|
+    smb.vm.box = "centos/7"
+    smb.vm.hostname = "smb"
+    smb.vm.network "private_network", ip: "10.10.8.16", gateway: "10.10.8.1", virtualbox__intnet: true
+    smb.vm.synced_folder ".", "/vagrant", type: "virtualbox"
   end
 
 end
