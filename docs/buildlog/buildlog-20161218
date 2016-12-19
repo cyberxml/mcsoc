@@ -1,0 +1,15 @@
+TEST PASSED: 181
+TEST FAILED: 8
+==================
+Total Tests: 189
+
+95.77% success rate
+
+[F]	ROUTING	DMZ	Allow TCP ping from DMZ to TEST WEB on Port 443	./test_dmz_tcp_to_testweb-443.sh
+[F]	ROUTING	TEST	Allow TCP ping from TEST to TEST WEB on Port 443	./test_external_tcp_to_testweb-443.sh
+[F]	EMAIL	TEST	Send MAIL from TEST to ENTSVR MAIL via DMZ	/vagrant/test/testmail/staged/test_external_send_mail_to_entmail.sh
+[F]	EMAIL FILTER	TEST	Send MAIL from TEST to ENTSVR MAIL via DMZ with EICAR in message	/vagrant/test/testmail/staged/test_external_send_mail_to_entmail_eicar.sh
+[F]	EMAIL	ENTSVR	Read MAIL in ENTSVR from TEST MAIL	/vagrant/test/entmail/staged/test_internal_read_mail_from_testmail.sh
+[F]	EMAIL FILTER	ENTSVR	Block MAIL in ENTSVR from TEST MAIL wih EICAR text	/vagrant/test/entmail/staged/test_internal_read_mail_from_testmail_eicar.sh
+[F]	EMAIL	ENTSVR	Send MAIL from ENTSVR to TEST via DMZMAIL	/vagrant/test/entmail/staged/test_internal_send_mail_to_testmail.sh
+[F]	EMAIL	TEST	Read MAIL in TEST from ENTSVR MAIL	/vagrant/test/testmail/staged/test_external_read_mail_from_entmail.sh

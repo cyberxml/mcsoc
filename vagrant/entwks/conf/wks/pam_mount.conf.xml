@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE pam_mount SYSTEM "pam_mount.conf.xml.dtd">
+<pam_mount>
+  <mntoptions allow="nosuid,nodev,loop,encryption,fsck,nonempty,allow_root,allow_other,workgroup,nosetuids,noexec,nosuid" />
+  <mntoptions require="nosuid,nodev" />
+  <logout wait="2" hup="0" term="yes" kill="0" />
+  <mkmountpoint enable="1" remove="true" />
+  <volume 
+	fstype="cifs" 
+	server="smb.example.net" 
+	sgrp="domain users"
+	path="%(USER)" 
+	mountpoint="/home/ENT/%(USER)" 
+	options="workgroup=ENT,uid=%(USER),nosuid,nodev" />
+</pam_mount>
+<!-- options="workgroup=ENT,uid=%(USER),dir_mode=0700,file_mode=700,nosuid,nodev" / -->

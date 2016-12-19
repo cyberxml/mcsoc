@@ -11,10 +11,9 @@ $TTL 86400
 @       IN  PTR         example.net.
 10.10.8.11     IN  PTR         dc1.example.net.
 10.10.8.12     IN  PTR         dc2.example.net.
-10.10.8.13     IN  PTR         mail.example.net.
-10.10.8.14     IN  PTR         web.example.net.
-10.10.8.15     IN  PTR         file.example.net.
-10.10.8.16     IN  PTR         smb.example.net.
+10.10.8.13     IN  PTR         entmail.example.net.
+10.10.8.14     IN  PTR         entweb.example.net.
+10.10.8.15     IN  PTR         entsmb.example.net.
 10.10.9.101    IN  PTR         entws101.example.net.
 10.10.3.3      IN  PTR         dmzdns.example.net.
 10.10.3.4      IN  PTR         dmzmail.example.net.

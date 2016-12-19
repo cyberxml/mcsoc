@@ -27,8 +27,8 @@ vagrant ssh testmail -c /vagrant/test/testmail/staged/test_external_send_mail_to
 vagrant ssh testmail -c /vagrant/test/testmail/staged/test_external_send_mail_to_entmail_eicar.sh 2>/dev/null
 
 cd $PROJDIR/vagrant/entsvr
-vagrant ssh mail -c /vagrant/test/staged/entmail/test_internal_read_mail_from_testmail.sh 2>/dev/null
-vagrant ssh mail -c /vagrant/test/staged/entmail/test_internal_read_mail_from_testmail_eicar.sh 2>/dev/null
+vagrant ssh mail -c /vagrant/test/entmail/staged/test_internal_read_mail_from_testmail.sh 2>/dev/null
+vagrant ssh mail -c /vagrant/test/entmail/staged/test_internal_read_mail_from_testmail_eicar.sh 2>/dev/null
 
 # ------------------------------------------------------------------------------------
 # email from ENTSVR to TEST

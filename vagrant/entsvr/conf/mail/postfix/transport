@@ -1,5 +1,0 @@
-example.net dovecot
-.example.net dovecot
-ent.example.net dovecot
-.ent.example.net dovecot
-* smtp:[10.10.3.4]
