@@ -1,0 +1,16 @@
+server_host     = dc1.example.net
+server_port     = 389
+version         = 3
+bind            = yes
+start_tls       = yes
+bind_dn         = cn=vmail,cn=users,dc=ent,dc=example,dc=net
+bind_pw         = Vagrant!234
+search_base     = cn=users,dc=ent,dc=example,dc=net
+scope           = sub
+#query_filter    = (&(objectClass=group)(mail=%s))
+query_filter    = (&(objectClass=group)(mail=%u@ent.example.net))
+special_result_attribute = member
+leaf_result_attribute = mail
+result_attribute= userPrincipalName
+debuglevel      = 0
+

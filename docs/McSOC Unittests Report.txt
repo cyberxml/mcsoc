@@ -6,7 +6,7 @@
 [P]	ROUTING	ENTSVR	Allow ping from ENTSVR to DMZ WEB	./test_internal_ping_to_dmzweb.sh
 [P]	ROUTING	ENTSVR	Allow ping from ENTSVR to External Web	./test_internal_ping_to_testweb.sh
 [P]	PROXY FILTER	ENTSVR	Block proxied web access to EICAR from ENTSVR to TEST Web on Port 80	./test_internal_proxy_web_access_to_testweb_eicar.sh
-[P]	PROXY	ENTSVR	Allow proxied web access from ENTSVR to TEST Web on Port 80	./test_internal_proxy_web_access_to_testweb.sh
+[F]	PROXY	ENTSVR	Allow proxied web access from ENTSVR to TEST Web on Port 80	./test_internal_proxy_web_access_to_testweb.sh
 [P]	DNS	ENTSVR	Resolve DMZ DNS Host from ENTSVR	./test_internal_resolve_dmzdns.sh
 [P]	DNS	ENTSVR	Resolve ENTSVR DNS Host from ENTSVR	./test_internal_resolve_entdns.sh
 [P]	DNS	ENTSVR	Resolve ENTSVR File Host from ENTSVR	./test_internal_resolve_entfile.sh
@@ -120,7 +120,7 @@
 [F]	ROUTING	DMZ	Allow TCP ping from DMZ to TEST WEB on Port 443	./test_dmz_tcp_to_testweb-443.sh
 [P]	ROUTING	DMZ	Allow TCP ping from DMZ to TEST WEB on Port 80	./test_dmz_tcp_to_testweb-80.sh
 [P]	EMAIL	TEST	Send MAIL from TEST to TEST MAIL	./test_external_1_send_mail_to_testmail.sh
-[P]	EMAIL	TEST	Read MAIL in TEST from TEST MAIL	./test_external_2_read_mail_from_testmail.sh
+[F]	EMAIL	TEST	Read MAIL in TEST from TEST MAIL	./test_external_2_read_mail_from_testmail.sh
 [P]	ROUTING	TEST	Block direct web access from TEST to ENTSVR Web on Port 80	./test_external_direct_web_access_to_entweb.sh
 [P]	ROUTING	TEST	Allow ping from External Hosts to DMZ DNS	./test_external_ping_to_dmzdns.sh
 [P]	ROUTING	TEST	Allow ping from External Hosts to DMZ MAIL	./test_external_ping_to_dmzmail.sh

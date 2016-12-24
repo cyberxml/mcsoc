@@ -18,6 +18,15 @@ yum -y install net-tools bind-utils wget
 
 
 #---------------------------------------
+# check_mk network monitor agent
+#---------------------------------------
+yum -y install xinetd
+rpm -i /vagrant/pkgs/check_mk-agent-1.2.4p3-1.noarch.rpm
+rpm -i /vagrant/pkgs/check_mk-agent-logwatch-1.2.4p3-1.noarch.rpm
+systemctl enable xinetd
+systemctl start xinetd
+
+#---------------------------------------
 # Bind DNS
 #---------------------------------------
 # https://www.unixmen.com/setting-dns-server-centos-7/
@@ -153,6 +162,5 @@ cd iRedMail-0.9.5-1/
 #sh iRedMail.sh
 # /opt/iRedMail-0.9.5-1/config
 # Public key for altermime-0.3.10-10.el7.x86_64.rpm is not installed
-
 
 

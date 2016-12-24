@@ -1,0 +1,17 @@
+TEST PASSED: 179
+TEST FAILED: 10
+==================
+Total Tests: 189
+
+94.71% success rate
+
+[F]	PROXY	ENTSVR	Allow proxied web access from ENTSVR to TEST Web on Port 80	./test_internal_proxy_web_access_to_testweb.sh
+[F]	ROUTING	DMZ	Allow TCP ping from DMZ to TEST WEB on Port 443	./test_dmz_tcp_to_testweb-443.sh
+[F]	EMAIL	TEST	Read MAIL in TEST from TEST MAIL	./test_external_2_read_mail_from_testmail.sh
+[F]	ROUTING	TEST	Allow TCP ping from TEST to TEST WEB on Port 443	./test_external_tcp_to_testweb-443.sh
+[F]	EMAIL	TEST	Send MAIL from TEST to ENTSVR MAIL via DMZ	/vagrant/test/testmail/staged/test_external_send_mail_to_entmail.sh
+[F]	EMAIL FILTER	TEST	Send MAIL from TEST to ENTSVR MAIL via DMZ with EICAR in message	/vagrant/test/testmail/staged/test_external_send_mail_to_entmail_eicar.sh
+[F]	EMAIL	ENTSVR	Read MAIL in ENTSVR from TEST MAIL	/vagrant/test/entmail/staged/test_internal_read_mail_from_testmail.sh
+[F]	EMAIL FILTER	ENTSVR	Block MAIL in ENTSVR from TEST MAIL wih EICAR text	/vagrant/test/entmail/staged/test_internal_read_mail_from_testmail_eicar.sh
+[F]	EMAIL	ENTSVR	Send MAIL from ENTSVR to TEST via DMZMAIL	/vagrant/test/entmail/staged/test_internal_send_mail_to_testmail.sh
+[F]	EMAIL	TEST	Read MAIL in TEST from ENTSVR MAIL	/vagrant/test/testmail/staged/test_external_read_mail_from_entmail.sh
