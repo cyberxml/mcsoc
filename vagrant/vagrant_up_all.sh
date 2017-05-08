@@ -1,4 +1,4 @@
-for i in entwks entsvr dmz soc test routers; do
+for i in entwks entsvr dmz soc test; do
 	echo Starting ${i}
 	cd ${i}
 	vagrant up
@@ -6,9 +6,10 @@ for i in entwks entsvr dmz soc test routers; do
 done
 
 
+# routers handled separately due to boot fails on VirtualBox Guest Additions
 cd routers
-for i in rtr_pub rtr_ext rtr_dmz rtr_int rtr_ent rtr_dev; do
-	vagrant ssh ${i} -c "php -r \"require 'gwlb.inc'; setup_gateways_monitor();\""
-done
+for i in rtr_pub_vy rtr_ext_vy rtr_dmz_vy rtr_int_vy rtr_ent_vy rtr_dev_vy; do
+	vagrant up ${i} 
+dont
 
 

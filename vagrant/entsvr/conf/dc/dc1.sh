@@ -147,6 +147,16 @@ samba-tool dns query localhost ent.example.net @ ALL -U administrator --password
 samba-tool dns add dc1 ent.example.net mail A 10.10.0.13 -U administrator --password Vagrant\!234
 
 
+#---------------------------------------
+# Beat: a Logstash Agent
+#---------------------------------------
+cp /vagrant/conf/logs/logstash-forwarder.crt /etc/pki/tls/certs/
+rpm --import http://packages.elastic.co/GPG-KEY-elasticsearch
+cp /vagrant/conf/logs/elastic-beats.repo /etc/yum.repos.d/
+yum -y install filebeat
+cp /vagrant/conf/logs/filebeat.yml /etc/filebeat/filebeat.yml
+systemctl start filebeat
+systemctl enable filebeat
 
 
 #---------------------------------------

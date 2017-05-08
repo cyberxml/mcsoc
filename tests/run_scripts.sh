@@ -11,9 +11,11 @@ vagrant ssh dmzdns -c /vagrant/test/dmzdns/run_tests.sh 2>/dev/null
 vagrant ssh dmzmail -c /vagrant/test/dmzmail/run_tests.sh 2>/dev/null
 vagrant ssh dmzweb -c /vagrant/test/dmzweb/run_tests.sh 2>/dev/null
 
+cd $PROJDIR/vagrant/soc
+vagrant ssh elastic -c /vagrant/test/elastic/run_tests.sh 2>/dev/null
+
 cd $PROJDIR/vagrant/test
 vagrant ssh testmail -c /vagrant/test/testmail/run_tests.sh 2>/dev/null
-
 
 # ------------------------------------------------------------------------------------
 # These are 'staged' tests that require specific steps in order in more than one zone

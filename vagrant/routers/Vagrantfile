@@ -6,90 +6,86 @@ Vagrant.configure("2") do |config|
 
   # Public Router: End of the World Router
   # Needed to stablize External Router External Interface
-  config.vm.define "rtr_pub" do |rtr_pub|
-    rtr_pub.vm.box = "cyberxml/pfsense-ce-232-64"
-    rtr_pub.vm.hostname = "rtr-pub"
-    rtr_pub.ssh.shell = 'sh'
-    rtr_pub.ssh.username = 'vagrant'
-    rtr_pub.ssh.password = 'vagrant'
-    rtr_pub.vm.network "private_network", ip: "10.10.1.2", virtualbox__intnet: true
-    rtr_pub.vm.network "private_network", ip: "10.10.254.2", virtualbox__intnet: true
-    rtr_pub.vm.network "forwarded_port", guest: 443, host: 55432
-    rtr_pub.vm.synced_folder ".", "/vagrant", disabled: true
+  config.vm.define "rtr_pub_vy" do |rtr_pub_vy|
+    rtr_pub_vy.vm.box = "higebu/vyos"
+    rtr_pub_vy.vm.hostname = "rtr-pub"
+    rtr_pub_vy.ssh.shell = 'sh'
+    rtr_pub_vy.ssh.username = 'vagrant'
+    rtr_pub_vy.ssh.password = 'vagrant'
+    rtr_pub_vy.vm.network "private_network", ip: "10.10.1.2", virtualbox__intnet: true
+    rtr_pub_vy.vm.network "private_network", ip: "10.10.254.2", virtualbox__intnet: true
+    rtr_pub_vy.vm.network "forwarded_port", guest: 443, host: 55442
+    rtr_pub_vy.vm.synced_folder ".", "/vagrant", disabled: true
   end
 
   # External Router
-  config.vm.define "rtr_ext" do |rtr_ext|
-    rtr_ext.vm.box = "cyberxml/pfsense-ce-232-64"
-    rtr_ext.vm.hostname = "rtr-ext"
-    rtr_ext.ssh.shell = 'sh'
-    rtr_ext.ssh.username = 'vagrant'
-    rtr_ext.ssh.password = 'vagrant'
-    rtr_ext.vm.network "private_network", ip: "10.10.1.1", virtualbox__intnet: true
-    rtr_ext.vm.network "private_network", ip: "10.10.2.1", virtualbox__intnet: true
-    rtr_ext.vm.network "forwarded_port", guest: 443, host: 55433
-    rtr_ext.vm.synced_folder ".", "/vagrant", disabled: true
+  config.vm.define "rtr_ext_vy" do |rtr_ext_vy|
+    rtr_ext_vy.vm.box = "higebu/vyos"
+    rtr_ext_vy.vm.hostname = "rtr-ext"
+    rtr_ext_vy.ssh.shell = 'sh'
+    rtr_ext_vy.ssh.username = 'vagrant'
+    rtr_ext_vy.ssh.password = 'vagrant'
+    rtr_ext_vy.vm.network "private_network", ip: "10.10.1.1", virtualbox__intnet: true
+    rtr_ext_vy.vm.network "private_network", ip: "10.10.2.1", virtualbox__intnet: true
+    rtr_ext_vy.vm.network "forwarded_port", guest: 443, host: 55443
+    rtr_ext_vy.vm.synced_folder ".", "/vagrant", disabled: true
   end
 
   # DMZ Router
-  config.vm.define "rtr_dmz" do |rtr_dmz|
-    rtr_dmz.vm.box = "cyberxml/pfsense-ce-232-64"
-    rtr_dmz.vm.hostname = "rtr-dmz"
-    rtr_dmz.ssh.shell = 'sh'
-    rtr_dmz.ssh.username = 'vagrant'
-    rtr_dmz.ssh.password = 'vagrant'
-    rtr_dmz.vm.network "private_network", ip: "10.10.2.2", virtualbox__intnet: true
-    rtr_dmz.vm.network "private_network", ip: "10.10.5.2", virtualbox__intnet: true
-    rtr_dmz.vm.network "private_network", ip: "10.10.3.2", virtualbox__intnet: true
-    rtr_dmz.vm.network "private_network", ip: "10.10.4.2", virtualbox__intnet: true
-    rtr_dmz.vm.network "forwarded_port", guest: 443, host: 55434
-    rtr_dmz.vm.synced_folder ".", "/vagrant", disabled: true
-    rtr_dmz.vm.provision "file", source: "conf/config.rtr_dmz", destination: "/cf/conf/config.xml"
+  config.vm.define "rtr_dmz_vy" do |rtr_dmz_vy|
+    rtr_dmz_vy.vm.box = "higebu/vyos"
+    rtr_dmz_vy.vm.hostname = "rtr-dmz"
+    rtr_dmz_vy.ssh.shell = 'sh'
+    rtr_dmz_vy.ssh.username = 'vagrant'
+    rtr_dmz_vy.ssh.password = 'vagrant'
+    rtr_dmz_vy.vm.network "private_network", ip: "10.10.2.2", virtualbox__intnet: true
+    rtr_dmz_vy.vm.network "private_network", ip: "10.10.5.2", virtualbox__intnet: true
+    rtr_dmz_vy.vm.network "private_network", ip: "10.10.3.2", virtualbox__intnet: true
+    rtr_dmz_vy.vm.network "private_network", ip: "10.10.4.2", virtualbox__intnet: true
+    rtr_dmz_vy.vm.network "forwarded_port", guest: 443, host: 55444
+    rtr_dmz_vy.vm.synced_folder ".", "/vagrant", disabled: true
   end
 
   # INT Router
-  config.vm.define "rtr_int" do |rtr_int|
-    rtr_int.vm.box = "cyberxml/pfsense-ce-232-64"
-    rtr_int.vm.hostname = "rtr-int"
-    rtr_int.ssh.shell = 'sh'
-    rtr_int.ssh.username = 'vagrant'
-    rtr_int.ssh.password = 'vagrant'
-    rtr_int.vm.network "private_network", ip: "10.10.5.1", virtualbox__intnet: true
-    rtr_int.vm.network "private_network", ip: "10.10.6.1", virtualbox__intnet: true
-    rtr_int.vm.network "private_network", ip: "10.10.7.1", virtualbox__intnet: true
-    rtr_int.vm.network "forwarded_port", guest: 443, host: 55435
-    rtr_int.vm.synced_folder ".", "/vagrant", disabled: true
-    rtr_int.vm.provision "file", source: "conf/config.rtr_int", destination: "/cf/conf/config.xml"
+  config.vm.define "rtr_int_vy" do |rtr_int_vy|
+    rtr_int_vy.vm.box = "higebu/vyos"
+    rtr_int_vy.vm.hostname = "rtr-int"
+    rtr_int_vy.ssh.shell = 'sh'
+    rtr_int_vy.ssh.username = 'vagrant'
+    rtr_int_vy.ssh.password = 'vagrant'
+    rtr_int_vy.vm.network "private_network", ip: "10.10.5.1", virtualbox__intnet: true
+    rtr_int_vy.vm.network "private_network", ip: "10.10.6.1", virtualbox__intnet: true
+    rtr_int_vy.vm.network "private_network", ip: "10.10.7.1", virtualbox__intnet: true
+    rtr_int_vy.vm.network "forwarded_port", guest: 443, host: 55445
+    rtr_int_vy.vm.synced_folder ".", "/vagrant", disabled: true
   end
 
   # Enterprise Router
-  config.vm.define "rtr_ent" do |rtr_ent|
-    rtr_ent.vm.box = "cyberxml/pfsense-ce-232-64"
-    rtr_ent.vm.hostname = "rtr-ent"
-    rtr_ent.ssh.shell = 'sh'
-    rtr_ent.ssh.username = 'vagrant'
-    rtr_ent.ssh.password = 'vagrant'
-    rtr_ent.vm.network "private_network", ip: "10.10.6.2", virtualbox__intnet: true
-    rtr_ent.vm.network "private_network", ip: "10.10.8.1", virtualbox__intnet: true
-    rtr_ent.vm.network "private_network", ip: "10.10.9.1", virtualbox__intnet: true
-    rtr_ent.vm.network "forwarded_port", guest: 443, host: 55436
-    rtr_ent.vm.synced_folder ".", "/vagrant", disabled: true
-    rtr_ent.vm.provision "file", source: "conf/config.rtr_ent", destination: "/cf/conf/config.xml"
+  config.vm.define "rtr_ent_vy" do |rtr_ent_vy|
+    rtr_ent_vy.vm.box = "higebu/vyos"
+    rtr_ent_vy.vm.hostname = "rtr-ent"
+    rtr_ent_vy.ssh.shell = 'sh'
+    rtr_ent_vy.ssh.username = 'vagrant'
+    rtr_ent_vy.ssh.password = 'vagrant'
+    rtr_ent_vy.vm.network "private_network", ip: "10.10.6.2", virtualbox__intnet: true
+    rtr_ent_vy.vm.network "private_network", ip: "10.10.8.1", virtualbox__intnet: true
+    rtr_ent_vy.vm.network "private_network", ip: "10.10.9.1", virtualbox__intnet: true
+    rtr_ent_vy.vm.network "forwarded_port", guest: 443, host: 55446
+    rtr_ent_vy.vm.synced_folder ".", "/vagrant", disabled: true
   end
 
   # Development Router
-  config.vm.define "rtr_dev" do |rtr_dev|
-    rtr_dev.vm.box = "cyberxml/pfsense-ce-232-64"
-    rtr_dev.vm.hostname = "rtr-dev"
-    rtr_dev.ssh.shell = 'sh'
-    rtr_dev.ssh.username = 'vagrant'
-    rtr_dev.ssh.password = 'vagrant'
-    rtr_dev.vm.network "private_network", ip: "10.10.7.2", virtualbox__intnet: true
-    rtr_dev.vm.network "private_network", ip: "10.10.10.1", virtualbox__intnet: true
-    rtr_dev.vm.network "private_network", ip: "10.10.11.1", virtualbox__intnet: true
-    rtr_dev.vm.network "forwarded_port", guest: 443, host: 55437
-    rtr_dev.vm.synced_folder ".", "/vagrant", disabled: true
-    rtr_dev.vm.provision "file", source: "conf/config.rtr_dev", destination: "/cf/conf/config.xml"
+  config.vm.define "rtr_dev_vy" do |rtr_dev_vy|
+    rtr_dev_vy.vm.box = "higebu/vyos"
+    rtr_dev_vy.vm.hostname = "rtr-dev"
+    rtr_dev_vy.ssh.shell = 'sh'
+    rtr_dev_vy.ssh.username = 'vagrant'
+    rtr_dev_vy.ssh.password = 'vagrant'
+    rtr_dev_vy.vm.network "private_network", ip: "10.10.7.2", virtualbox__intnet: true
+    rtr_dev_vy.vm.network "private_network", ip: "10.10.10.1", virtualbox__intnet: true
+    rtr_dev_vy.vm.network "private_network", ip: "10.10.11.1", virtualbox__intnet: true
+    rtr_dev_vy.vm.network "forwarded_port", guest: 443, host: 55447
+    rtr_dev_vy.vm.synced_folder ".", "/vagrant", disabled: true
   end
 
 end

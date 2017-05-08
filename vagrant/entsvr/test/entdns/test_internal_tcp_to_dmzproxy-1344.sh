@@ -1,6 +1,6 @@
 #! /bin/bash
 
-test="Allow TCP ping from ENTSVR to DMZ MAIL on Port 1344"
+test="Allow TCP ping from ENTSVR to DMZ Proxy on Port 1344"
 host="10.10.3.6"
 port="1344"
 cmd="nc -w2 -c 'hostname' ${host} ${port}"
